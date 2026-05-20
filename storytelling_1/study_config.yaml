@@ -1,0 +1,43 @@
+study:
+  id: storytelling_1
+  n_per_cell: 100
+  # Balanced order means: replicate 1 across every provider/prompt, then replicate 2, etc.
+  # This makes interrupted or quota-limited runs remain stratified and usable.
+  run_order: balanced_by_replicate
+  max_output_tokens: 1200
+  stop_on_error: true
+  sleep_seconds_between_requests: 0.25
+  random_seed_for_plan_order: 508
+
+storage:
+  sqlite_path: data/storytelling_1.sqlite
+  request_plan_csv: data/request_plan.csv
+  export_dir: data/exports
+  results_dir: results
+  shard_rows: 250
+
+providers:
+  openai:
+    enabled: true
+    # Closest API proxy for a current average Free ChatGPT interface.
+    # ChatGPT's exact "Instant" routing may not be available as a stable API model name.
+    model: gpt-5.5
+    api_key_env: OPENAI_API_KEY
+    # Do not set temperature/top_p for the main study. Keep provider defaults.
+    extra:
+      reasoning_effort: none
+
+  anthropic:
+    enabled: true
+    # Anthropic's Sonnet model is the best proxy for average Claude free-user behavior.
+    model: claude-sonnet-4-6
+    api_key_env: ANTHROPIC_API_KEY
+    extra: {}
+
+  gemini:
+    enabled: true
+    # Best current API proxy for average Gemini Flash-style free-user behavior.
+    # If your Gemini account exposes a newer app-default model, change this one line.
+    model: gemini-3.5-flash
+    api_key_env: GEMINI_API_KEY
+    extra: {}
