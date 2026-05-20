@@ -1,0 +1,42 @@
+# Prompt cells for storytelling_2.
+# Keep prompt_text exactly as a user would type it; do not add hidden framing.
+prompts:
+  - prompt_id: P01_baseline_exact
+    prompt_group: baseline
+    prompt_text: "tell me a story please"
+    analysis_role: "primary baseline: exact pilot prompt"
+
+  - prompt_id: P02_baseline_no_please
+    prompt_group: baseline
+    prompt_text: "tell me a story"
+    analysis_role: "minimal politeness perturbation"
+
+  - prompt_id: P03_write_variant
+    prompt_group: baseline
+    prompt_text: "write me a story"
+    analysis_role: "verb perturbation"
+
+  - prompt_id: P04_short_variant
+    prompt_group: baseline
+    prompt_text: "tell me a short story please"
+    analysis_role: "length cue perturbation"
+
+  - prompt_id: P05_strange_variant
+    prompt_group: mood
+    prompt_text: "tell me a strange story please"
+    analysis_role: "mood perturbation"
+
+  - prompt_id: P06_funny_variant
+    prompt_group: mood
+    prompt_text: "tell me a funny story please"
+    analysis_role: "mood perturbation"
+
+  - prompt_id: P07_random_setting_genre
+    prompt_group: intervention_randomization
+    prompt_text: "tell me a story please. First choose a random setting and genre."
+    analysis_role: "tests whether explicit randomization breaks the default attractor"
+
+  - prompt_id: P08_suppression
+    prompt_group: intervention_suppression
+    prompt_text: "tell me a story please, but not about lighthouses, lamps, lanterns, the sea, the ocean, ships, boats, storms, fog, islands, cliffs, or old caretakers."
+    analysis_role: "tests whether explicit motif suppression is obeyed"
