@@ -1,0 +1,247 @@
+request_id,provider,model,prompt_id,prompt_text,replicate,status,story_text,input_tokens,output_tokens,thoughts_tokens,finish_reason,elapsed_sec,created_utc,error
+openai|P01_baseline_please|r0001,openai,gpt-5.5,P01_baseline_please,tell me a story please,1,ok,"Once, in a village tucked between a dark forest and a silver river, there lived a clockmaker named Elian who made the finest clocks anyone had ever seen. His clocks did not merely tick; they hummed softly, chimed like birds, and seemed to know when people needed comfort.
+
+There was one clock in his shop, however, that he never sold.
+
+It was small, made of blue-painted wood, with a face like moonlight and hands as thin as spider silk. Instead of numbers, it had twelve tiny stars. It never ticked. It never chimed. It simply sat on the highest",11,150,,incomplete,7.01,2026-05-21T03:51:56+00:00,
+anthropic|P01_baseline_please|r0001,anthropic,claude-sonnet-4-6,P01_baseline_please,tell me a story please,1,ok,"# The Lantern Keeper's Last Night
+
+Old Maren had kept the lighthouse for forty years.
+
+Every evening, she climbed the 127 steps — she knew the exact number, had counted them so many times they felt like old friends — wound the great clockwork mechanism, and lit the lamp. Every morning, she climbed back down.
+
+Simple work. Lonely work. *Necessary* work.
+
+On the night of the worst storm in a decade, with waves crashing over the rocks like angry fists, Maren heard something strange beneath the howling wind.
+
+A voice.
+
+Small. Frightened.
+
+She found the boy on the rocks below, clinging to a",12,150,,max_tokens,5.68,2026-05-21T03:52:03+00:00,
+gemini|P01_baseline_please|r0001,gemini,gemini-3.5-flash,P01_baseline_please,tell me a story please,1,ok,"Deep in the heart of the Whispering Woods, where the trees grew so tall their leaves brushed the stars, lived a tiny barn owl named Barnaby. 
+
+Barnaby was not like other owls. While his brothers and sisters loved the velvety darkness of the night, Barnaby was terrified of it. To him, the night was not a time for hunting or flying; it was a giant, ink-colored blanket that hid monsters, shadows, and mysterious rustles. 
+
+Every evening, as the sun began to dip below the horizon, painting the sky in bruises of purple and orange, Barnaby’s heart would do a little flutter of panic. He would retreat to the very back of his hollow in the great oak tree, wrapping his wings tightly around himself like a feather coat.
+
+""Barnaby,"" his mother would sigh gently, her eyes shining like gold coins. ""The dark is just the world taking a breath. There is nothing to fear.""
+
+But Barnaby would just shake his head, burying his beak in his chest.
+
+One chilly autumn evening, a thick, silver fog rolled into the forest. It was so dense that even the moonlight couldn’t pierce through it. From the branches below his hollow, Barnaby heard a soft, pitiful sound. 
+
+*Sniff. Whimper. Sniff.*
+
+Barnaby poked his head out of his hollow, his large, dark eyes straining to see through the gloom. There, sitting on a low branch, was a tiny creature. It looked like a ball of golden fluff with a tail that glowed like a dying ember. It was a baby Firefly-Squirrel, a rare creature of the deep woods. And it was crying.
+
+""Hello?"" Barnaby called out, his voice squeaking slightly. ""Are you okay?""
+
+The little creature looked up, its glowing tail flickering weakly. ""I’m Pip,"" it sobbed. ""I was chasing a falling star, and I got lost. The fog is too thick, and my tail is running out of light. I can't find my way back to the Lantern Tree. And... and I’m scared of the dark!""
+
+Barnaby felt a sudden, deep pang of sympathy. He knew exactly what it felt like to be small and terrified of the shadows. 
+
+""I can help you,"" Barnaby said. The words came out of his beak before he could stop them. *Wait,* he thought, *me? Help? In the dark?*
+
+But Pip looked up with such hope in his wet eyes that Barnaby couldn’t back down. He took a deep breath, puffed out his chest feathers, and stepped out onto the branch.
+
+""Hop on my back,"" Barnaby instructed, trying to sound much braver than he felt. 
+
+Pip scrambled up, his warm little body pressing against Barnaby’s feathers. His glowing tail gave off a faint, comforting warmth. 
+
+Barnaby spread his wings. He looked out into the endless, misty blackness. His heart hammered like a woodpecker on a trunk. *For Pip,* he whispered to himself. And with a leap, he dived into the night.
+
+The cool night air rushed past his face. To his surprise, it didn't feel hostile; it felt like a cool silk scarf. 
+
+""Which way?"" Barnaby asked.
+
+""My home is by the Whispering River,"" Pip squeaked, clinging tight. ""Near the glowing blue mushrooms!""
+
+Barnaby closed his eyes for a second, listening. Without the bright, distracting light of the sun, his ears became incredibly sharp. He could hear the distant, rhythmic *hush-hush* of the river. He could hear the soft *pitter-patter* of a mouse walking on dry leaves, and the gentle wind playing the pine needles like a harp.",6,796,,FinishReason.MAX_TOKENS,6.16,2026-05-21T03:52:09+00:00,
+openai|P02_baseline_plain|r0001,openai,gpt-5.5,P02_baseline_plain,tell me a story,1,ok,"Once, in a town built between a forest and the sea, there lived a clockmaker named Elian who made clocks that never told the same time twice.
+
+People came from far away to buy them.
+
+“Your clocks are broken,” some would complain.
+
+“No,” Elian would say, polishing a tiny brass gear. “They simply tell the time you need.”
+
+Most people thought this was nonsense, but they bought the clocks anyway because they were beautiful. They had faces of pearl, hands as thin as eyelashes, and little painted moons that rose and fell behind glass.
+
+One rainy evening, a girl named Mara entered Elian’s",10,150,,incomplete,5.72,2026-05-21T03:52:15+00:00,
+anthropic|P02_baseline_plain|r0001,anthropic,claude-sonnet-4-6,P02_baseline_plain,tell me a story,1,ok,"# The Lantern and the Storm
+
+There was once a lighthouse keeper named Mara who lived alone on a rocky island where the sea was always angry.
+
+Every night, she climbed the spiral stairs, lit the great lantern, and watched it spin — sending its beam out across the dark water to guide the ships safely past the rocks.
+
+One autumn, a storm came that was unlike any other.
+
+The wind screamed. The waves crashed so high they swallowed the lower windows. The lantern flickered, then **went out**.
+
+Mara worked through the night — hands trembling, matches soaking wet — trying to bring the light back. Below, she could hear a ship's bell r",11,150,,max_tokens,4.99,2026-05-21T03:52:21+00:00,
+gemini|P02_baseline_plain|r0001,gemini,gemini-3.5-flash,P02_baseline_plain,tell me a story,1,ok,"The rain had been falling over the city of Oakhaven for three days straight, turning the cobblestone streets into slick, dark mirrors. In the heart of the city, tucked between a bakery and a clockmaker’s shop, sat *The Whispering Page*, a bookstore that smelled of vanilla, old paper, and woodsmoke. 
+
+Behind the counter sat Silas, a man whose silver hair matched the wire-rimmed glasses perched on the bridge of his nose. Silas had spent forty years in this shop, and he believed, with quiet certainty, that books chose their readers, not the other way around.
+
+It was late, just ten minutes before closing, when the brass bell above the door chimed. 
+
+A young woman stepped inside, shaking the water from her umbrella. She wore a heavy green trench coat, but her shoulders were hunched, and her eyes held the kind of deep, exhausting weariness that sleep couldn’t fix. 
+
+""Welcome,"" Silas said softly. ""The tea is still warm if you’d like a cup.""
+
+""Just looking, thank you,"" she replied, her voice barely above a whisper. 
+
+Silas watched her out of the corner of his eye. She didn't walk like someone searching for a specific title. She wandered aimlessly, her fingers lightly trailing along the spines of the novels, looking for a lifeline. Her name was Clara, though Silas didn't know that yet. She had moved to the city a month ago for a job that had quickly turned into a nightmare of endless hours and cold cubicles. She felt entirely alone in a city of millions.
+
+She stopped in the dusty history section at the back of the shop, her eyes resting on a high shelf. 
+
+Suddenly, a heavy, leather-bound book with a faded blue spine slid forward. It didn't fall, but rather nudged itself out of the row, as if leaning down to greet her. 
+
+Clara blinked, reached up, and pulled it down. The leather was soft, worn smooth by hands that had held it decades ago. There was no title on the cover, only a gold-embossed compass rose.
+
+She opened it. The pages were thick, hand-cut, and smelled of lavender. But to her surprise, it wasn't a printed book. It was a diary, written in elegant, looping cursive. 
+
+*“October 14th, 1924,”* Clara read to herself. *“I arrived in Oakhaven tonight. The rain is relentless, and I know no one. I sit in my small room, wondering if I made a terrible mistake. But then, I look out at the streetlamps shining on the wet stone, and I remind myself: the grandest adventures always begin in the dark.”*
+
+Clara gasped softly. She felt a sudden, strange warmth in her chest. She turned the page. The diary was filled with the thoughts of a young woman named Evelyn, who had arrived in the city a century ago, feeling the exact same crushing loneliness that Clara felt tonight. 
+
+Clara walked to the counter, holding the book tightly to her chest. ""How much for this?""
+
+Silas looked at the blue leather book, then up at Clara’s eyes, which were now bright and alert. He smiled, a gentle creasing of the skin around his eyes.
+
+""Ah,"" Silas said. ""The blue ledger. That one has been waiting on the shelf for a very long time. It has no price.""
+
+""Oh, I can't take it for free,"" Clara protested.
+
+""Books like that are never bought, my dear. They are only borrowed,"" Silas said, leaning forward. ""The previous owner, Evelyn, left it here fifty years ago. She told me that one day, someone would come into",5,796,,FinishReason.MAX_TOKENS,5.56,2026-05-21T03:52:27+00:00,
+openai|P03_write_variant|r0001,openai,gpt-5.5,P03_write_variant,write me a story,1,ok,"Every morning, Mara found a seashell on her windowsill.
+
+This would not have been strange if she lived near the sea. But Mara lived in a town surrounded by wheat fields, two hundred miles from the nearest shore. Her little house sat at the end of a dirt road, where the wind smelled of grass and rain, never salt.
+
+The first shell was small and pink, curled like a sleeping cat.
+
+Mara picked it up and turned it over in her palm. “Where did you come from?”
+
+The shell, naturally, said nothing.
+
+She placed it on the kitchen table and went about her day",10,150,,incomplete,4.63,2026-05-21T03:52:32+00:00,
+anthropic|P03_write_variant|r0001,anthropic,claude-sonnet-4-6,P03_write_variant,write me a story,1,ok,"# The Last Lighthouse Keeper
+
+The storm had been building for three days before it finally arrived.
+
+Mara watched it come from the gallery of the lighthouse, her hands wrapped around a mug of tea that had long gone cold. She watched the clouds pile up on the horizon like dark mountains, watched the sea go from gray to black, watched the gulls disappear one by one until the sky was empty and she was completely alone.
+
+She had always preferred it that way.
+
+---
+
+She had taken the job six years ago, after the accident. People in town said she had run away from her life, and maybe they were right. But Mara thought of it differently. She thought of it as moving",11,150,,max_tokens,4.49,2026-05-21T03:52:37+00:00,
+gemini|P03_write_variant|r0001,gemini,gemini-3.5-flash,P03_write_variant,write me a story,1,ok,"The rain in New York did not fall; it drifted in a grey, horizontal slate that smelled of wet asphalt and burnt sugar from the nuts-seller’s cart on the corner of 57th.
+
+Julian stood in the doorway of a defunct furrier, his hands deep in the pockets of a coat that had belonged to his father when his father was a man who still bought coats. Across the street, the lights of the *Galerie d'Or* were amber and dry. Through the tall pane of glass, Julian could see the small, square frame of *The Orchard*.
+
+It was no larger than a biscuit tin, painted in oils that had cracked into a thousand tiny valleys of dry brown and oxidized green. It was by an artist named Giraud, who had died of the cholera in 1849 without leaving enough money to bury his dog.
+
+Julian had eighty-four dollars in his left pocket and a silver pocket watch with a broken mainspring in his right. He was twenty-eight years old, and he had spent the last five years believing that if he could only look at *The Orchard* for forty minutes without someone asking him if he had an appointment, his life would settle into its proper socket.
+
+He crossed the avenue. A taxi honked, a brief, wet bark that died in the mist.
+
+The brass handle of the gallery door was shaped like a greyhound’s head, cold and sleek. When he entered, the silence of the room met him like a dry towel. The floorboards were wide-planked oak, bleached to the color of salt fish.
+
+""Good afternoon,"" said the woman behind the desk. She was small, with hair the color of pewter, held in place by two long silver pins that looked like surgical instruments. She did not look up from her ledger, but her pen stopped its scratching.
+
+""I’ve come to see the Giraud,"" Julian said.
+
+""It is in the small room,"" she said. ""The light is poor today.""
+
+""The light is always poor today,"" Julian said, though he had never been inside before.
+
+The woman raised her eyes then. They were very pale, the blue of skimmed milk. She looked at his boots, which were wet, and then at his collar, which was frayed in the manner of things that have been scrubbed too often with yellow soap.
+
+""The small room is through the arch,"" she said.
+
+The small room was octagonal. It smelled of old glue and beeswax. There were four pictures on the walls, but Julian did not look at the three that were not *The Orchard*.
+
+He sat on the velvet circular banquette in the center of the room. His knees made a sharp angle in his trousers.
+
+The painting was hung too low, or perhaps the bench was too high, so that he had to lean forward, his elbows on his thighs, his chin almost touching his chest.
+
+The picture showed three pear trees behind a low stone wall. The sky was the color of a wet slate, very much like the sky outside, but Giraud had laid a thin glaze of yellow over the grey, so that the light seemed to be coming from behind the clouds, or perhaps from some source just behind the canvas itself. In the middle distance, a woman in a red apron was bending down to pick up a fallen fruit. Her face was only three strokes of a lead-white brush—no eyes, no nose, only the tilt of a neck that suggested she was tired.
+
+Julian looked at the red apron.
+
+It was not red. Close up, it was a mixture of vermilion and black, with a single streak of cadmium yellow where the light caught the fold of her hip. It was the color of a coal that has been left in the grate after the fire has gone out",5,796,,FinishReason.MAX_TOKENS,5.8,2026-05-21T03:52:42+00:00,
+openai|P04_short_variant|r0001,openai,gpt-5.5,P04_short_variant,tell me a short story please,1,ok,"Mira found a tiny door at the base of the old oak tree, painted blue and no taller than her hand.
+
+She knocked once.
+
+The door creaked open, and a mouse wearing spectacles peered out. “You’re late,” he said.
+
+“For what?” Mira whispered.
+
+“For tea, of course.”
+
+Inside was a warm little room filled with acorn cups, thimble chairs, and the smell of cinnamon. Around the table sat beetles, sparrows, and a sleepy hedgehog with a napkin tucked under his chin.
+
+Mira stayed until sunset, laughing at stories no human had ever heard.
+
+When she finally stepped back outside, the tiny",12,150,,incomplete,4.64,2026-05-21T03:52:48+00:00,
+anthropic|P04_short_variant|r0001,anthropic,claude-sonnet-4-6,P04_short_variant,tell me a short story please,1,ok,"# The Last Light
+
+Every evening, old Marco climbed the hill to light the lantern.
+
+He had done it for forty years — through rain, through illness, through the winter his wife passed and left the house quiet in a way it never quite recovered from.
+
+People in the village below never really thought about it. The light just *appeared*, the way the sun did, or the tide.
+
+One evening, a young girl followed him up the path.
+
+""Why do you do it?"" she asked, out of breath from the climb. ""Nobody asked you to.""
+
+Marco hung the lantern on its iron hook and struck the match.
+
+""When I was young,"" he said, ""I was lost at",13,150,,max_tokens,5.0,2026-05-21T03:52:53+00:00,
+gemini|P04_short_variant|r0001,gemini,gemini-3.5-flash,P04_short_variant,tell me a short story please,1,ok,"The rain had washed the city clean, leaving the pavement glistening like obsidian under the streetlamps. At precisely 9:00 PM, Julian walked into *The Rusty Anchor*, a dimly lit tavern buried in the seaside town’s oldest quarter. 
+
+He wasn't there for a drink. He was there to return something.
+
+Julian sat at the far end of the mahogany bar and placed a small, velvet-lined wooden box on the counter. He ordered a ginger ale and waited. 
+
+Five minutes later, the stool next to him creaked. An elderly woman with silver hair pulled back in a tight bun sat down. She wore a heavy tweed coat that smelled of salt air and old paper. She didn't look at Julian, but she placed her hands on the bar. Her fingers were long, elegant, and bore no rings.
+
+""You have it?"" she asked, her voice like dry autumn leaves.
+
+""I do,"" Julian said softly. He pushed the box toward her.
+
+The woman, whose name was Clara, opened the lid. Inside, resting on the velvet, was a pocket watch. But it wasn’t a normal timepiece. It had no numbers, only intricate, overlapping brass rings, and a single, pearlescent hand that was currently pointing straight up, frozen.
+
+""Does it still work?"" Clara asked, a tremor of vulnerability breaking through her cold exterior.
+
+""It does,"" Julian replied. ""But as we agreed, using it has a price. You cannot change the past, Clara. You can only visit it. And for every hour you spend there, you lose a year of your remaining life.""
+
+Clara stared at the watch. Fifty years ago, on a rainy night just like this one, she had argued with her sister. They had parted in anger, and her sister had boarded a ship that sank in the harbor hours later. For half a century, the weight of those unspoken words had crushed Clara's spirit.
+
+""I don't have many years left anyway,"" Clara whispered. She touched the brass casing. ""I just need five minutes. Just to tell her I'm sorry. Just to see her smile one last time.""
+
+Julian watched her. As the Keeper of the Watch, he had seen many people make this trade. Most sought to undo fortunes lost or empires fallen, but the ones who broke his heart were those who just wanted to say goodbye.
+
+""Five minutes will cost you a month,"" Julian said gently. ""Are you sure?""
+
+""With all my heart.""
+
+Clara picked up the watch. Following Julian’s instructions from weeks prior, she wound the stem three times counterclockwise, closed her eyes, and pressed the button on top.
+
+A soft, golden light pulsed from the cracks of the watch casing. The air in the tavern grew warm, and the sound of the rain outside seemed to stretch and slow down until it was completely silent. For Julian, only a second passed. 
+
+But when the light faded, Clara was still sitting next to him. 
+
+Her shoulders, however, were no longer tense. The heavy burden she had carried for fifty years seemed to have evaporated. When she opened her eyes, they were bright, wet with tears, but shining with a profound, peaceful joy. She looked slightly older, the wrinkles around her eyes a bit deeper, but she was smiling.
+
+""She forgave me,"" Clara whispered, her voice trembling with happiness. ""She was wearing her yellow dress. She told me to live.""
+
+Clara closed the wooden box and pushed it back to Julian. ""Thank you,"" she said. 
+
+She stood up, buttoned her tweed coat, and walked out of the tavern. She didn't look back, but her step was lighter than it had been in half a century.
+
+Julian watched her go, then picked",7,796,,FinishReason.MAX_TOKENS,5.5,2026-05-21T03:52:58+00:00,

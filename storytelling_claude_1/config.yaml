@@ -43,11 +43,11 @@ output_csv: data/stories.csv
 # them for your own API keys, since they are the most likely thing to break.
 #
 # PER-PROVIDER TOKEN CAP: a provider may set its own `max_output_tokens` to
-# override the global one above. Why this exists: at a global 150-token cap,
-# Gemini returned 3-6 token fragments ("The sign above") instead of stories,
-# while OpenAI/Anthropic capped cleanly. Gemini already self-limits to ~100
-# tokens, so it doesn't need capping at all — we give it generous headroom and
-# let it stop naturally. OpenAI/Anthropic inherit the global 150 cap.
+# override the global one above. (Currently none do — all three use the global
+# 150. This override remains available in case a provider needs different
+# headroom later.) Note: Gemini required a separate fix — thinking is disabled
+# in run.py so reasoning tokens don't consume the output budget; with that in
+# place Gemini uses the same 150 cap as the others.
 # ----------------------------------------------------------------------------
 providers:
   openai:
@@ -66,7 +66,10 @@ providers:
     enabled: true
     model: gemini-3.5-flash   # verify against current Gemini model list
     api_key_env: GEMINI_API_KEY
-    max_output_tokens: 800    # do NOT tightly cap Gemini; it self-limits to ~100
+    # inherits global max_output_tokens (150). NOTE: thinking is disabled for
+    # Gemini in run.py (thinking_budget=0); without that, reasoning tokens eat
+    # the budget and you get fragments. With thinking off, Gemini behaves like
+    # the others and the global 150 cap is correct.
 
 # ----------------------------------------------------------------------------
 # Prompt cells. The text IS the experimental condition — keep it verbatim.
