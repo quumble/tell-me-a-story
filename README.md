@@ -21,18 +21,19 @@ by provider, and what kinds of prompts break it — and, importantly, to discove
 
 ```
 tell-me-a-story/
-├── storytelling_claude_1/     ← the current study (run this)
-│   ├── run.py                 generate stories → flat CSV, resumable
-│   ├── analyze.py             discover attractors, three similarity signals
-│   ├── config.yaml            models, prompts, run settings (the one file you edit)
+├── storytelling_claude_1/        ← the current study (run this)
+│   ├── run.py                    generate stories → flat CSV, resumable
+│   ├── analyze.py                discover attractors, three similarity signals
+│   ├── config.yaml               models, prompts, run settings (the one file you edit)
 │   ├── requirements.txt
-│   ├── README.md              full study docs — start here
-│   └── data_sample/           a tiny sample CSV showing the data shape
-├── archive/                   provenance, not maintained
-│   ├── storytelling_1/        the original first-pass harness (superseded)
-│   └── pilot_Opus47_GPT.txt   the hand-collected pilot that started this
+│   ├── .env.example              copy to .env and add your API keys
+│   ├── README.md                 full study docs — start here
+│   ├── data/                     run output (stories.csv); not committed
+│   └── data_sample/              a tiny sample CSV showing the data shape
+├── original_overcooked_plan/     the original first-pass harness (superseded; provenance, not maintained)
+├── story_test_pilot_Opus47_GPT.txt  the hand-collected pilot that started this
 ├── LICENSE
-└── README.md                  (this file)
+└── README.md                     (this file)
 ```
 
 The active study is **`storytelling_claude_1/`** — its README has the full
@@ -55,12 +56,13 @@ define it. The known lighthouse pattern is kept as a named baseline flag.
 Active. Current runs cover OpenAI and Anthropic at `n=100` per prompt; Gemini is
 temporarily disabled (its free-tier daily quota is far below what the study
 needs — see the study README). Results are regenerable and are not committed to
-the repo; a small sample lives in `storytelling_claude_1/data_sample/`.
+the repo; a small sample lives in `storytelling_claude_1/data_sample/stories_sample.csv`.
 
-## A note on the archive
+## A note on the older harness
 
-`archive/storytelling_1/` is the original harness — a more elaborate design
+`original_overcooked_plan/` is the original harness — a more elaborate design
 (SQLite, sharded exports, a provider class hierarchy) that was rebuilt into the
 simpler, working version now in `storytelling_claude_1/`. It's kept for
-provenance and is not maintained. `archive/pilot_Opus47_GPT.txt` is the original
-hand-collected set of generations that first revealed the lighthouse pattern.
+provenance and is not maintained (it doesn't run as-is — see the study README).
+`story_test_pilot_Opus47_GPT.txt` is the original hand-collected set of
+generations that first revealed the lighthouse pattern.

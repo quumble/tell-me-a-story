@@ -146,9 +146,10 @@ splits into near-duplicates, raise it; if unrelated stories get lumped, lower it
 Edit prompt text in `config.yaml`. The text *is* the experimental condition, so
 change it deliberately.
 
-## What changed from storytelling_1
+## What changed from the original plan
 
-The previous version was over-built for a 2,400-row study and, more importantly,
+The previous version (now kept as `../original_overcooked_plan/` for provenance)
+was over-built for a 2,400-row study and, more importantly,
 didn't run (`run.py` imported a `provider_factory` module that didn't exist).
 This rewrite keeps the good ideas — balanced ordering, resumability, the motif
 families — and drops what wasn't earning its keep: SQLite + WAL, gzip/sharded
