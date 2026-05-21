@@ -1,0 +1,1173 @@
+request_id,provider,model,prompt_id,prompt_text,replicate,status,story_text,input_tokens,output_tokens,thoughts_tokens,finish_reason,elapsed_sec,created_utc,error
+openai|P01_baseline_please|r0001,openai,gpt-5.5,P01_baseline_please,tell me a story please,1,ok,"Once, at the edge of a quiet forest, there was a little clockmaker’s shop that only opened after sunset.
+
+No one in the village knew why.
+
+During the day, its windows were dark and dusty, and the sign above the door—**Merrin’s Clocks, Bells, and Unusual Repairs**—swung gently even when there was no wind. But every evening, just as the first star appeared, warm golden light spilled through the glass, and the soft ticking of a hundred clocks filled the street.
+
+The clockmaker, Merrin, was an old woman with silver hair, round spectacles, and hands so steady",11,150,,incomplete,6.98,2026-05-21T04:38:51+00:00,
+anthropic|P01_baseline_please|r0001,anthropic,claude-sonnet-4-6,P01_baseline_please,tell me a story please,1,ok,"# The Lantern Keeper's Last Night
+
+Old Mara had kept the lighthouse for forty-three years.
+
+Every evening, she climbed the 127 steps — she had counted them so many times she felt them in her sleep — lit the great lamp, and watched the sea. She knew this coastline the way most people know their own hands. Every rock. Every current. Every mood the water could wear.
+
+But tonight felt different.
+
+A storm was coming. Not the angry, loud kind that announced itself with thunder. The quiet kind. The kind that crept in like a secret.
+
+She lit the lamp anyway.
+
+Around midnight, through the howling wind, she heard something. Not a",12,150,,max_tokens,9.18,2026-05-21T04:38:59+00:00,
+openai|P02_baseline_plain|r0001,openai,gpt-5.5,P02_baseline_plain,tell me a story,1,ok,"Once, in a village tucked between two green hills, there was a clockmaker named Elian who built clocks that never chimed at the same time twice.
+
+This bothered the villagers.
+
+“A clock should be reliable,” said the baker, whose bread came out either too early or too late.
+
+“A clock should be sensible,” said the schoolteacher, who often found her students arriving at noon for morning lessons.
+
+“A clock should tell the truth,” said the mayor, who liked truths best when they were neat and printed on official paper.
+
+But Elian only smiled and adjusted his tiny spectacles. “My clocks do tell the truth,” he",10,150,,incomplete,5.39,2026-05-21T04:39:08+00:00,
+anthropic|P02_baseline_plain|r0001,anthropic,claude-sonnet-4-6,P02_baseline_plain,tell me a story,1,ok,"# The Lantern Keeper
+
+There was once an old man who lived at the edge of a forest where the path grew dark.
+
+Every night, he lit a lantern and hung it from the branch of a twisted oak tree. Not for himself — he knew the path by heart. He lit it for strangers.
+
+For thirty years, he did this. Most travelers passed without looking up. Some never even noticed the light, though it guided their feet safely around the roots and rocks. A few nodded. Fewer still said thank you.
+
+One evening, a young woman stopped beneath the tree.
+
+""Why do you do this?"" she asked. ""Nobody seems to care.""
+
+The old man trimmed the",11,150,,max_tokens,4.77,2026-05-21T04:39:14+00:00,
+openai|P03_write_variant|r0001,openai,gpt-5.5,P03_write_variant,write me a story,1,ok,"The moon was missing.
+
+Mara noticed it first because she was the town’s lamplighter, and lamplighters notice the dark the way sailors notice storms. Every evening, she climbed the iron ladders along the crooked streets of Bellwether, touched her flame to each glass lantern, and watched the town become a necklace of gold.
+
+But that night, when she reached the hilltop lantern outside the clockmaker’s shop, she looked up and saw only a black sky scattered with nervous stars.
+
+The moon, usually fat and silver above the rooftops, had vanished.
+
+By morning, everyone knew.
+
+The baker blamed",10,150,,incomplete,6.04,2026-05-21T04:39:19+00:00,
+anthropic|P03_write_variant|r0001,anthropic,claude-sonnet-4-6,P03_write_variant,write me a story,1,ok,"# The Last Lighthouse Keeper
+
+The storm had been building for three days before it finally arrived.
+
+Maren heard it coming in the way her grandmother had taught her — a low, hollow moan threading through the rocks below the cliff, like the ocean was clearing its throat before saying something important.
+
+She set down her coffee and walked to the window.
+
+The sea had turned the color of old iron.
+
+---
+
+Maren had taken the job at Pelican Point Lighthouse the way most people take jobs they weren't looking for — out of desperation and a vague feeling that something needed to change. The position had been listed on a government website between *Seasonal Fishery Observer* and *",11,150,,max_tokens,4.78,2026-05-21T04:39:25+00:00,
+openai|P04_short_variant|r0001,openai,gpt-5.5,P04_short_variant,tell me a short story please,1,ok,"The little lighthouse at the edge of the cliffs had not shone for years.
+
+Every night, Mara climbed the spiral stairs anyway, carrying a single candle. “Just in case,” she would say to the wind.
+
+The villagers laughed—until the fog came down thicker than wool and a fishing boat failed to return.
+
+Mara ran to the top of the lighthouse, but the great lamp was cracked and cold. So she set her candle inside the dusty glass and whispered, “Please.”
+
+Far out in the dark, the captain saw the tiniest golden spark.
+
+It was not enough to light the sea.
+
+But it was enough to show the way home.",12,147,,completed,6.13,2026-05-21T04:39:30+00:00,
+anthropic|P04_short_variant|r0001,anthropic,claude-sonnet-4-6,P04_short_variant,tell me a short story please,1,ok,"# The Last Light
+
+Every evening, old Marco climbed the hill to light the lantern.
+
+He had done it for forty years. Rain, snow, broken knees — it didn't matter. The lantern sat at the top of the hill above the harbor, and the fishermen needed it to find their way home.
+
+One autumn night, his granddaughter Elena followed him up the path.
+
+""Why do you still do this?"" she asked, a little out of breath. ""They have GPS now, Grandpa. Nobody needs the lantern anymore.""
+
+Marco smiled and struck the match.
+
+""Last spring,"" he said, ""young Pietro's boat lost power in the storm. His phone was dead",13,150,,max_tokens,4.93,2026-05-21T04:39:36+00:00,
+openai|P05_strange_variant|r0001,openai,gpt-5.5,P05_strange_variant,tell me a strange story please,1,ok,"At the edge of a town that did not appear on maps, there was a laundromat that only opened during thunderstorms.
+
+Its sign flickered blue-white in the rain:
+
+**SPIN & SIN**
+**Open When Necessary**
+
+Nobody knew who owned it. Nobody had ever seen a delivery truck bring soap, or a repairman fix the machines, or a cleaner mop the floor. Yet every time lightning split the sky, the laundromat glowed awake between the shuttered bakery and the empty pet store, humming softly like a throat clearing itself.
+
+Mara found it on a Thursday night after her umbrella turned inside out and her suitcase broke open in the street.",12,150,,incomplete,6.03,2026-05-21T04:39:42+00:00,
+anthropic|P05_strange_variant|r0001,anthropic,claude-sonnet-4-6,P05_strange_variant,tell me a strange story please,1,ok,"# The Man Who Collected Tuesdays
+
+Harold Fitch woke up one morning to find an extra Tuesday sitting in his kitchen.
+
+It was just *there*, folded up on the counter like a newspaper, next to his coffee maker. He unfolded it carefully. It smelled like rain and overdue library books.
+
+""Hm,"" said Harold.
+
+He didn't throw it away. Instead he put it in a shoebox.
+
+Over the following months, more Tuesdays arrived. They came through the mail slot, fell out of coat pockets, floated down from the ceiling fan. Each one was slightly different. One was warm and yellow. One had a small dent",13,150,,max_tokens,4.76,2026-05-21T04:39:48+00:00,
+openai|P06_funny_variant|r0001,openai,gpt-5.5,P06_funny_variant,tell me a funny story please,1,ok,"Sure — here’s a silly one:
+
+A man walked into a pet shop and said, “I’d like to buy a parrot, but it has to be clever.”
+
+The shopkeeper pointed to a bright green parrot and said, “This one is incredibly smart. It speaks three languages and can do basic math.”
+
+The man was impressed. “Amazing! How much?”
+
+“Five thousand dollars.”
+
+The man gulped. “Okay… what about that red one?”
+
+“Oh, that one is even smarter. It speaks seven languages, can play chess, and has a podcast.”
+
+“Wow. How much?”
+
+“Ten thousand dollars.”
+
+The man looked around and saw a",12,150,,incomplete,5.09,2026-05-21T04:39:53+00:00,
+anthropic|P06_funny_variant|r0001,anthropic,claude-sonnet-4-6,P06_funny_variant,tell me a funny story please,1,ok,"# The Case of the Missing Sandwich
+
+Dave was absolutely certain his sandwich had been stolen.
+
+He had made it himself that morning - turkey, swiss cheese, lettuce, the good mustard. He wrapped it carefully, labeled it ""DAVE'S - DO NOT TOUCH"" in big red letters, and put it in the office fridge.
+
+At lunchtime, it was gone.
+
+Dave called a meeting.
+
+""Someone,"" he announced gravely to his seven coworkers, ""has committed a sandwich crime.""
+
+Everyone looked around nervously. Dave had prepared a slideshow.
+
+For forty-five minutes, Dave walked through his evidence - timestamps, witness statements, a hand-drawn map of the",13,150,,max_tokens,6.26,2026-05-21T04:39:58+00:00,
+openai|P07_random_setting|r0001,openai,gpt-5.5,P07_random_setting,tell me a story please. First choose a random setting and genre.,1,ok,"**Random setting:** A floating market above a gas giant  
+**Random genre:** Cozy mystery
+
+---
+
+The first rule of the Cloud-Bazaar was: never drop anything.
+
+The second rule was: if you did drop something, don’t watch it fall.
+
+Mira kept both rules carefully as she steered her little teapot-shaped skiff between the market stalls drifting above the amber storms of the planet Orolis. Around her, vendors called from balloon-tethered platforms and brass-rimmed boats. They sold moon-pears, bottled lightning, singing scarves, gravity cakes, and tiny",20,150,,incomplete,6.28,2026-05-21T04:40:05+00:00,
+anthropic|P07_random_setting|r0001,anthropic,claude-sonnet-4-6,P07_random_setting,tell me a story please. First choose a random setting and genre.,1,ok,"# The Lighthouse at the Edge of Knowing
+
+**Setting:** A remote lighthouse on a fog-covered island, 1920s
+**Genre:** Psychological mystery
+
+---
+
+The supply boat came every three weeks, and it was always late.
+
+Margaret Voss had stopped counting the days sometime in October. Or maybe it was November. The fog had a way of swallowing time whole, chewing it up and spitting it back out in the wrong order.
+
+She was the third keeper of Harrow Point Lighthouse. The first had gone blind. The second had simply *gone*.
+
+Margaret told herself she was different. She had her logbook, her routine, her tin of Earl Grey tea.",21,150,,max_tokens,5.17,2026-05-21T04:40:11+00:00,
+openai|P08_suppression|r0001,openai,gpt-5.5,P08_suppression,"tell me a story please, but not about lighthouses, lamps, the sea, ships, storms, fog, islands, cliffs, or old caretakers.",1,ok,"In the town of Brindlewick, every door had a different sound.
+
+The baker’s door chimed like a spoon tapping a teacup. The",39,150,,incomplete,4.93,2026-05-21T04:40:17+00:00,
+anthropic|P08_suppression|r0001,anthropic,claude-sonnet-4-6,P08_suppression,"tell me a story please, but not about lighthouses, lamps, the sea, ships, storms, fog, islands, cliffs, or old caretakers.",1,ok,"Here's a story for you:
+
+---
+
+**The Cartographer's Mistake**
+
+Elena had been mapping the same forest for eleven years when she finally found the road that wasn't supposed to be there.
+
+It appeared on a Tuesday, which felt wrong for a discovery. Discoveries should happen on dramatic days, she always thought. Mondays were too tired. Tuesdays were for dentist appointments and forgetting to buy milk.
+
+But there it was. A road, packed dirt, running perfectly straight through the oak trees, heading somewhere her maps insisted was nothing.
+
+She followed it mostly out of professional stubbornness.
+
+After twenty minutes she arrived at a town. Small, tidy, with",42,150,,max_tokens,5.02,2026-05-21T04:40:22+00:00,
+openai|P01_baseline_please|r0002,openai,gpt-5.5,P01_baseline_please,tell me a story please,2,ok,"Once, in a village tucked between a silver forest and a blue mountain, there lived a clockmaker named Mira.
+
+Mira made clocks of every kind: tall clocks that chimed like church bells, tiny clocks that ticked like beetle feet, and round clocks with moons painted on their faces. People traveled from far away to buy them, because Mira’s clocks were known for keeping perfect time.
+
+But Mira herself was always late.
+
+She woke late, ate late, arrived late, and apologized so often that the village children could imitate her perfectly: “So sorry! Lost track of the minutes!”
+
+One rainy evening, while searching her workshop for a",11,150,,incomplete,6.22,2026-05-21T04:40:27+00:00,
+anthropic|P01_baseline_please|r0002,anthropic,claude-sonnet-4-6,P01_baseline_please,tell me a story please,2,ok,"# The Lantern Keeper's Last Night
+
+Old Maren had kept the lighthouse for forty years.
+
+Every evening, she climbed the 127 steps — she had counted them so many times she counted them in her sleep — and lit the great lamp. Every morning, she climbed back down. In between, she watched the sea.
+
+The sea never got boring. That was something people didn't understand.
+
+---
+
+On the night this story is about, a storm was coming. Maren could feel it in her knees before she could see it in the sky. The clouds moved in like a closing fist, and the waves began their low, warning grumble.
+
+She lit the lamp",12,150,,max_tokens,4.96,2026-05-21T04:40:34+00:00,
+openai|P02_baseline_plain|r0002,openai,gpt-5.5,P02_baseline_plain,tell me a story,2,ok,"Once, in a town tucked between a dark pine forest and a silver river, there was a clockmaker named Elian who made the finest clocks anyone had ever seen.
+
+His clocks did not merely tick.
+
+They sighed before storms.  
+They hummed softly when children were born.  
+They slowed down on summer evenings, when the light turned golden and nobody wanted the day to end.
+
+People came from far away to buy them, but Elian never sold his most curious clock.
+
+It stood in the back of his shop beneath a sheet of blue velvet. It was tall, made of black walnut, with a face",10,150,,incomplete,6.82,2026-05-21T04:40:39+00:00,
+anthropic|P02_baseline_plain|r0002,anthropic,claude-sonnet-4-6,P02_baseline_plain,tell me a story,2,ok,"# The Lantern Keeper
+
+There was once an old man who lived at the edge of a great forest, and every night without fail, he lit a lantern and hung it outside his door.
+
+His neighbors thought him strange.
+
+""Who is it for?"" they asked. ""You have no family. No one visits you.""
+
+The old man would only smile and say, **""Someone might need it.""**
+
+Years passed. The neighbors stopped asking.
+
+Then one winter, a terrible storm rolled in off the mountains. Snow buried the roads. Winds knocked out every light in the village. People huddled in their dark homes, afraid and disoriented.
+
+But on the edge of the forest,",11,150,,max_tokens,5.24,2026-05-21T04:40:46+00:00,
+openai|P03_write_variant|r0002,openai,gpt-5.5,P03_write_variant,write me a story,2,ok,"The first time Mara heard the mountain breathe, she was seven years old.
+
+It was winter, and the village below the cliffs had gone quiet beneath a thick blanket of snow. Smoke rose straight from the chimneys, too cold and still to drift sideways. Mara had been sent to fetch kindling from the shed, but on her way back she stopped at the edge of the yard, arms full of sticks, and listened.
+
+From somewhere deep inside the mountain came a long, low sigh.
+
+Mara dropped the wood.
+
+Her grandmother, who had been watching from the doorway,",10,150,,incomplete,5.01,2026-05-21T04:40:51+00:00,
+anthropic|P03_write_variant|r0002,anthropic,claude-sonnet-4-6,P03_write_variant,write me a story,2,ok,"# The Last Lighthouse Keeper
+
+The storm had been building for three days before it finally made up its mind.
+
+Elena watched it from the gallery railing, her hands wrapped tight around the cold iron, her hair whipping sideways like something trying to escape. Below her, the sea was doing what angry seas do — throwing itself against the rocks with a kind of personal fury, as if it had a grudge specifically against this small finger of land jutting into the Atlantic.
+
+She had inherited the lighthouse from her uncle, which was a strange thing to inherit. Most people left behind houses, money, maybe a collection of vintage watches. Uncle Peder had left her a lighthouse on the coast of Maine, a logbook",11,150,,max_tokens,4.84,2026-05-21T04:40:57+00:00,
+openai|P04_short_variant|r0002,openai,gpt-5.5,P04_short_variant,tell me a short story please,2,ok,"The moon was late.
+
+Every night, Lina climbed to the roof with a cup of tea and watched it rise over the old clocktower. But tonight, the sky stayed dark.
+
+So Lina lit a lantern and whispered, “Are you lost?”
+
+A silver thread drifted down from the clouds, landing at her feet. She followed it across rooftops, over chimneys, and up the clocktower stairs. At the top, she found the moon tangled in a flock of sleeping birds, its pale face full of embarrassment.
+
+“I didn’t want to wake them,” it said softly.
+
+Lina smiled and gently untangled the birds one by one. They fluttered away into",12,150,,incomplete,5.34,2026-05-21T04:41:02+00:00,
+anthropic|P04_short_variant|r0002,anthropic,claude-sonnet-4-6,P04_short_variant,tell me a short story please,2,ok,"# The Last Lighthouse
+
+Old Mari had kept the lighthouse burning for forty years. Every night, same routine — climb the stairs, trim the wick, watch the beam sweep across the dark water.
+
+The night they told her the lighthouse was being automated, she climbed the stairs one last time.
+
+As she reached the top, she noticed a small boat struggling in the distance, caught in a sudden storm. She kept the light burning through the night, guiding it safely to shore.
+
+In the morning, a young woman knocked on her door, soaking wet and grateful.
+
+""That light saved my life,"" she said.
+
+Mari smiled. *One more night mattered.*
+
+She handed over the keys to the",13,150,,max_tokens,5.01,2026-05-21T04:41:07+00:00,
+openai|P05_strange_variant|r0002,openai,gpt-5.5,P05_strange_variant,tell me a strange story please,2,ok,"At the edge of a town nobody remembered building, there was a laundromat that opened only during thunderstorms.
+
+Its neon sign buzzed in blue letters: **SPIN & SINCE**.
+
+Mara found it by accident one Tuesday night when the rain was falling upward and her umbrella was filling with sky. She ducked inside, dripping and annoyed, and discovered twelve washing machines turning in perfect silence.
+
+Behind the counter sat a woman with silver eyebrows, knitting a scarf out of dryer lint.
+
+“First time?” the woman asked.
+
+“I just need to get out of the rain,” Mara said.
+
+“That’s what everyone says before they wash a memory.”
+
+Mara laughed",12,150,,incomplete,5.94,2026-05-21T04:41:13+00:00,
+anthropic|P05_strange_variant|r0002,anthropic,claude-sonnet-4-6,P05_strange_variant,tell me a strange story please,2,ok,"# The Jar on the Third Shelf
+
+Marcus had lived alone for eleven years, so he noticed immediately when a jar appeared on the third shelf of his kitchen.
+
+It was small. Blue glass. Filled with something that looked like fog.
+
+He didn't touch it. He just went to bed.
+
+In the morning it had moved to the second shelf.
+
+He called his sister. She said he was probably sleepwalking and moving it himself. She said this with the particular confidence of someone who has never had to explain anything strange.
+
+The next day it was on the first shelf.
+
+Marcus decided to speak to it.
+
+*""What do you want?""* he asked, feeling ridiculous.",13,149,,max_tokens,5.06,2026-05-21T04:41:19+00:00,
+openai|P06_funny_variant|r0002,openai,gpt-5.5,P06_funny_variant,tell me a funny story please,2,ok,"Sure — here’s a silly one:
+
+A man walked into a pet shop and said, “I’d like a talking parrot, please.”
+
+The shopkeeper said, “You’re in luck. This one is very intelligent, but there’s a catch: he used to live in a library, so he only speaks in book titles.”
+
+The man thought that sounded charming and bought the parrot.
+
+When he got home, he said, “Hello, Polly! How are you feeling?”
+
+The parrot puffed up and said, “Great Expectations.”
+
+The man laughed. “Do you like your new home?”
+
+The parrot looked around and said, “A Room with",12,150,,incomplete,5.14,2026-05-21T04:41:24+00:00,
+anthropic|P06_funny_variant|r0002,anthropic,claude-sonnet-4-6,P06_funny_variant,tell me a funny story please,2,ok,"# The Great Pancake Disaster of Table Seven
+
+Dave was a new waiter. Confident. Maybe *too* confident.
+
+On his third day, a customer ordered pancakes. Simple enough. Dave grabbed the plate, balanced it perfectly, and walked across the restaurant like a man who absolutely had his life together.
+
+What he did NOT account for was the small puddle of orange juice on the floor near table seven.
+
+His foot hit it. Time slowed down.
+
+The plate stayed perfectly level as Dave's body went in three different directions simultaneously. In a desperate attempt to save the pancakes, he somehow **launched them straight up** into the air.
+
+Everyone watched.
+
+The pancakes came down —",13,150,,max_tokens,5.68,2026-05-21T04:41:30+00:00,
+openai|P07_random_setting|r0002,openai,gpt-5.5,P07_random_setting,tell me a story please. First choose a random setting and genre.,2,ok,"**Random setting:** a floating city above an endless storm  
+**Random genre:** cozy mystery
+
+---
+
+### *The Teapot in Cloudharbor*
+
+Cloudharbor drifted three thousand feet above the world, tethered to nothing but old magic, brass engines, and the stubborn optimism of its citizens.
+
+Below it, storms rolled forever.
+
+Above it, laundry lines snapped in the wind, bakery chimneys puffed cinnamon steam, and skywhales sang to one another in voices so low they made teaspoons tremble.
+
+Mira Bellweather ran the smallest tea shop in the city.
+
+It was called",20,150,,incomplete,5.5,2026-05-21T04:41:35+00:00,
+anthropic|P07_random_setting|r0002,anthropic,claude-sonnet-4-6,P07_random_setting,tell me a story please. First choose a random setting and genre.,2,ok,"# The Clockmaker's Daughter
+
+**Setting:** A fog-drenched port city in 1890s Victorian England
+**Genre:** Mystery / Gothic
+
+---
+
+The fog rolled in off the Thames like something alive, swallowing the gas lamps one by one until Mirabel Voss could barely see her own hands.
+
+She pressed them flat against the cold iron gate of her father's shop anyway. *Voss & Daughter — Timepieces of Distinction.* The sign still bore her name, even though she hadn't been inside in three years.
+
+Even though her father had been dead for two weeks.
+
+Even though the police had already closed the case.
+
+The door",21,150,,max_tokens,4.86,2026-05-21T04:41:41+00:00,
+openai|P08_suppression|r0002,openai,gpt-5.5,P08_suppression,"tell me a story please, but not about lighthouses, lamps, the sea, ships, storms, fog, islands, cliffs, or old caretakers.",2,ok,,39,150,,incomplete,3.79,2026-05-21T04:41:46+00:00,
+anthropic|P08_suppression|r0002,anthropic,claude-sonnet-4-6,P08_suppression,"tell me a story please, but not about lighthouses, lamps, the sea, ships, storms, fog, islands, cliffs, or old caretakers.",2,ok,"Here's a story for you:
+
+---
+
+**The Wrong Sandwich**
+
+Marcus had been making the same lunch for eleven years. Turkey, mustard, one slice of tomato, bread that was close to sourdough but not quite. Every weekday. No exceptions.
+
+On a Tuesday in March, he opened his lunch bag at his desk and found someone else's sandwich. Thick focaccia. Some kind of roasted pepper situation. A small container of something that was probably a very good olive spread.
+
+He looked around the office. Forty people. Someone was somewhere eating turkey and feeling confused.
+
+He should have said something. Gone to the break room, asked around, sorted it out.
+
+Instead",42,150,,max_tokens,5.46,2026-05-21T04:41:50+00:00,
+openai|P01_baseline_please|r0003,openai,gpt-5.5,P01_baseline_please,tell me a story please,3,ok,"Once, in a village tucked between a silver river and a dark green forest, there lived a girl named Mara who repaired broken things.
+
+She mended cracked teacups with gold-colored glue, stitched torn pockets, fixed chair legs, and once even persuaded the old church bell to ring again by crawling inside it with a wrench and a very serious expression.
+
+But there was one thing Mara could not fix.
+
+At the edge of the forest stood a clocktower. It had been silent for as long as anyone could remember. Its hands were stuck at twelve, its gears rusted, and its bell rope hung still as",11,150,,incomplete,10.01,2026-05-21T04:41:56+00:00,
+anthropic|P01_baseline_please|r0003,anthropic,claude-sonnet-4-6,P01_baseline_please,tell me a story please,3,ok,"# The Lantern Keeper's Daughter
+
+There was once a girl named Mira who lived at the edge of the world, where the land crumbled into fog and the stars hung so low you could almost touch them.
+
+Her father kept the lantern.
+
+Not a lighthouse lantern, not a street lantern — **the** lantern. The one that burned at the top of the old stone tower, the one that had burned for three hundred years without ever going out. Nobody remembered exactly why it needed to stay lit. They just knew that it did.
+
+Every night, Mira climbed the tower steps with her father, carrying the oil. Every night, he told her the same thing:",12,150,,max_tokens,5.42,2026-05-21T04:42:06+00:00,
+openai|P02_baseline_plain|r0003,openai,gpt-5.5,P02_baseline_plain,tell me a story,3,ok,"Once, in a village tucked between a silver forest and a sleepy blue lake, there lived a clockmaker named Elian who built the finest clocks anyone had ever seen.
+
+His clocks did not merely tell time.
+
+One clock chimed when someone was about to fall in love. Another ticked backward whenever its owner told a lie. A tiny golden pocket watch could remember birthdays even when people forgot them. Villagers came from miles away to buy Elian’s strange and beautiful creations.
+
+But Elian kept one clock hidden in the back of his shop.
+
+It was tall, taller than a door, made of dark walnut wood with a face of moon",10,150,,incomplete,7.47,2026-05-21T04:42:12+00:00,
+anthropic|P02_baseline_plain|r0003,anthropic,claude-sonnet-4-6,P02_baseline_plain,tell me a story,3,ok,"# The Lantern and the Storm
+
+There was once a lighthouse keeper named Mara who lived alone on a rocky island at the edge of the world.
+
+Every night, she climbed the spiral stairs and lit the great lantern, sending its beam across the black water to guide ships safely home. She had done this for twenty years, and in all that time, not a single ship had been lost on her watch.
+
+One autumn, a terrible storm rolled in — the kind that swallowed the sky whole.
+
+The wind screamed. The waves crashed over the rocks like hungry hands. And then, with a sharp crack and a shower of sparks, the lantern went dark.
+
+Mara stood in",11,150,,max_tokens,4.36,2026-05-21T04:42:20+00:00,
+openai|P03_write_variant|r0003,openai,gpt-5.5,P03_write_variant,write me a story,3,ok,"### The Lighthouse That Remembered
+
+At the far edge of the gray sea, where the cliffs broke the wind into howls, there stood a lighthouse no one visited anymore.
+
+It had once been painted white, but years of salt had turned it the color of old bones. Its lantern room was cracked. Its stairs groaned. Gulls nested in its roof and argued with the sky.
+
+The nearby village of Harrow’s End had forgotten why the lighthouse mattered.
+
+“Ships don’t come this way,” the villagers said.
+
+“The lamp is useless,” said the fishermen.
+
+“Let it fall,”",10,150,,incomplete,5.02,2026-05-21T04:42:24+00:00,
+anthropic|P03_write_variant|r0003,anthropic,claude-sonnet-4-6,P03_write_variant,write me a story,3,ok,"# The Last Lighthouse Keeper
+
+The storm came in fast, the way the worst ones always did.
+
+Mara had lived on the island for eleven years, long enough to read the sky like a familiar face. But this one surprised her — a wall of black cloud rolling in from the northwest, swallowing the horizon whole before she'd even finished her morning coffee.
+
+She set the mug down and ran.
+
+---
+
+The lighthouse was old. Older than the town on the mainland, older than the charts that marked this particular stretch of rocks as *dangerous* in bold red letters. It had been automated for decades, but Mara stayed anyway. The maritime authority paid her a small salary to do maintenance",11,150,,max_tokens,5.0,2026-05-21T04:42:30+00:00,
+openai|P04_short_variant|r0003,openai,gpt-5.5,P04_short_variant,tell me a short story please,3,ok,"The moon was late.
+
+Every night, Lina sat on the hill and waited for it to rise, because her grandfather had once told her the moon listened better than anyone else. But tonight the sky stayed dark, and the stars shivered alone.
+
+So Lina took her lantern and climbed higher than she ever had, past the old pine, past the fox den, all the way to the ridge where the wind kept its secrets.
+
+There, caught in the branches of an ancient tree, was the moon—small, silver, and tangled like a kite.
+
+“Oh,” Lina whispered. “You fell.”
+
+The moon gave a soft glow, embarrassed.
+
+Carefully, Lina climbed the tree",12,150,,incomplete,5.87,2026-05-21T04:42:35+00:00,
+anthropic|P04_short_variant|r0003,anthropic,claude-sonnet-4-6,P04_short_variant,tell me a short story please,3,ok,"# The Last Light
+
+Every evening, old Marco climbed the hill behind his house to watch the sunset.
+
+His granddaughter Sofia thought it was strange. ""You've seen a thousand sunsets, Grandpa,"" she said one day, following him up the worn path. ""Why do you still go?""
+
+Marco smiled and said nothing until they reached the top. They sat together on the flat rock and watched the sky turn orange, then pink, then deep purple.
+
+""Have you ever seen that one before?"" he asked.
+
+Sofia looked at the colors bleeding across the clouds — the exact pattern, the specific shade of gold catching the old oak tree below.
+
+""No,"" she admitted quietly.
+
+""Neither have",13,150,,max_tokens,5.22,2026-05-21T04:42:41+00:00,
+openai|P05_strange_variant|r0003,openai,gpt-5.5,P05_strange_variant,tell me a strange story please,3,ok,"At the end of Maple Street stood a house that had no front door.
+
+It had windows, a chimney, a crooked little fence, and a mailbox that read **PLEASE KNOCK**, but no door to knock on.
+
+Everyone in town agreed it was strange, but people can get used to anything if it stays strange long enough. Children walked past it on their way to school. Dogs barked at it and then seemed embarrassed. The mail carrier, Mr. Bell, simply tucked letters through a gap in the fence and pretended that counted.
+
+Then one Tuesday morning, a girl named Elinor found a brass doorknob",12,150,,incomplete,5.36,2026-05-21T04:42:46+00:00,
+anthropic|P05_strange_variant|r0003,anthropic,claude-sonnet-4-6,P05_strange_variant,tell me a strange story please,3,ok,"# The Man Who Collected Silences
+
+Bernard kept them in jars.
+
+Not metaphorically. Actual glass jars, the kind you'd use for preserving peaches, lined up on wooden shelves in a room he called *the library* even though there were no books.
+
+He had learned the technique from a woman he met on a train who got off before he could ask her name. She had simply said: *""You have to be very still, and very empty, and wait for the silence to fill the space you leave.""*
+
+It took him three years to catch his first one.
+
+It was the silence after a phone call where someone said *I love you* and meant something else",13,150,,max_tokens,5.6,2026-05-21T04:42:52+00:00,
+openai|P06_funny_variant|r0003,openai,gpt-5.5,P06_funny_variant,tell me a funny story please,3,ok,"Sure — here’s a silly one:
+
+A man walked into a pet store and said, “I’d like to buy a parrot, but I need one that’s quiet. I work from home.”
+
+The store owner nodded and said, “I have just the bird.”
+
+He brought out a tiny green parrot sitting politely on a perch.
+
+“This one never talks?” asked the man.
+
+“Almost never,” said the owner. “But I should warn you: he’s a little… sarcastic.”
+
+The man shrugged. “That’s fine. I have coworkers.”
+
+So he bought the parrot and took him home. For the first few days, the bird was perfectly",12,150,,incomplete,4.47,2026-05-21T04:42:58+00:00,
+anthropic|P06_funny_variant|r0003,anthropic,claude-sonnet-4-6,P06_funny_variant,tell me a funny story please,3,ok,"# The Great Squirrel Incident
+
+So there was this guy named Dave who was **absolutely convinced** he could outsmart a squirrel.
+
+It started innocently enough. The squirrel kept stealing from his bird feeder, so Dave bought a ""squirrel-proof"" feeder. The squirrel figured it out in **forty-five minutes.**
+
+Dave bought a *better* one. The squirrel figured it out in **twenty minutes.** It seemed to be getting faster.
+
+So Dave did what any reasonable person would do. He **watched seventeen YouTube videos**, bought a pulley system, greased a metal pole with Vaseline, and rigged an elaborate spinning baffle",13,150,,max_tokens,4.57,2026-05-21T04:43:03+00:00,
+openai|P07_random_setting|r0003,openai,gpt-5.5,P07_random_setting,tell me a story please. First choose a random setting and genre.,3,ok,"**Random setting:** A floating library above a stormy ocean  
+**Random genre:** Cozy mystery
+
+---
+
+The Floating Library of Bellwether Bay was held aloft by seven enormous balloons, each the color of old parchment and patched in at least thirteen places. It drifted two hundred feet above the sea, tethered to the cliffs by chains thick as tree trunks, swaying gently whenever the ocean below lost its temper.
+
+Inside, however, all was warm lamplight, creaking ladders, and the smell of tea.
+
+Mara Quill, assistant librarian and official keeper of the biscuit tin,",20,150,,incomplete,5.19,2026-05-21T04:43:07+00:00,
+anthropic|P07_random_setting|r0003,anthropic,claude-sonnet-4-6,P07_random_setting,tell me a story please. First choose a random setting and genre.,3,ok,"# The Clockmaker's Daughter
+
+**Setting:** A fog-drenched port city in 1880s Portugal
+**Genre:** Magical Realism
+
+---
+
+The clocks in Lisbon all stopped at the same moment — 3:47 in the afternoon — on the day Marta Sousa turned sixteen.
+
+Her father didn't notice at first. He was bent over his workbench, as he always was, a jeweler's loupe pressed to his eye like a strange metal monocle, breathing carefully so as not to disturb the tiny brass gears between his fingers. The shop smelled of oil and old wood and the salt that drifted up from the",21,150,,max_tokens,5.98,2026-05-21T04:43:13+00:00,
+openai|P08_suppression|r0003,openai,gpt-5.5,P08_suppression,"tell me a story please, but not about lighthouses, lamps, the sea, ships, storms, fog, islands, cliffs, or old caretakers.",3,ok,,39,150,,incomplete,4.62,2026-05-21T04:43:19+00:00,
+anthropic|P08_suppression|r0003,anthropic,claude-sonnet-4-6,P08_suppression,"tell me a story please, but not about lighthouses, lamps, the sea, ships, storms, fog, islands, cliffs, or old caretakers.",3,ok,"Here's a story for you:
+
+---
+
+**The Cartographer's Mistake**
+
+Elena had been drawing maps of places that didn't exist for thirty years when she finally drew one that did.
+
+She hadn't meant to. It started as it always did — a blank sheet of paper on a Tuesday morning, a cup of coffee going cold beside her, and her pen moving in the loose, wandering way it had when she wasn't thinking too hard. She drew a mountain range that curved like a sleeping shoulder. A river that changed its mind twice. A small city in a valley that had, based on the contour lines, absolutely no business being there.
+
+She labeled it Vorn. She gave it streets",42,150,,max_tokens,5.24,2026-05-21T04:43:24+00:00,
+openai|P01_baseline_please|r0004,openai,gpt-5.5,P01_baseline_please,tell me a story please,4,ok,"Once, in a town built between a whispering forest and a silver-blue sea, there lived a clockmaker named Elian who was famous for repairing anything that ticked.
+
+Pocket watches, tower clocks, music boxes, little brass birds that sang at noon—people brought them all to his shop, and he fixed them with patient hands and a gentle smile.
+
+But there was one thing Elian could not repair: the clock in the town square.
+
+It had stopped exactly forty years ago, its hands frozen at 3:17.
+
+No one knew why.
+
+Every clockmaker before Elian had tried to fix it. They had climbed",11,150,,incomplete,7.55,2026-05-21T04:43:29+00:00,
+anthropic|P01_baseline_please|r0004,anthropic,claude-sonnet-4-6,P01_baseline_please,tell me a story please,4,ok,"# The Lantern and the Lost Fox
+
+Once, deep in a forest where the trees grew so tall they seemed to hold up the sky, there lived a fox named Ember.
+
+Ember had bright orange fur and clever eyes, but she had one terrible habit — she never asked for help. Not once. Not ever.
+
+One autumn evening, Ember set out to find the great berry grove on the other side of the forest. She'd heard the berries there were sweet enough to last all winter. *I'll find it myself,* she thought, trotting confidently into the darkening woods.
+
+But the forest had other plans.
+
+Clouds swallowed the moon. The path twisted and doubled",12,150,,max_tokens,4.96,2026-05-21T04:43:37+00:00,
+openai|P02_baseline_plain|r0004,openai,gpt-5.5,P02_baseline_plain,tell me a story,4,ok,"Once, in a town tucked between a dark pine forest and a silver river, there lived a clockmaker named Elian who made the finest clocks anyone had ever seen.
+
+His clocks didn’t just tell time. They seemed to understand it.
+
+One clock chimed softly when someone was about to receive good news. Another ran a little slower on rainy afternoons, so children could enjoy their books a bit longer. Elian’s favorite was a small brass pocket watch that had never worked at all. Its hands stayed fixed at twelve, no matter how often he repaired it.
+
+He kept it in a drawer beneath his workbench and",10,150,,incomplete,6.05,2026-05-21T04:43:43+00:00,
+anthropic|P02_baseline_plain|r0004,anthropic,claude-sonnet-4-6,P02_baseline_plain,tell me a story,4,ok,"# The Lantern Keeper
+
+There was once an old man who lived at the edge of a great forest, where the trees grew so tall they seemed to hold up the sky.
+
+Every night, he lit a lantern and hung it outside his door.
+
+His neighbors thought it was strange. ""Who are you lighting it for?"" they asked. ""No one comes through that forest after dark.""
+
+""Someone might,"" he said simply.
+
+Years passed. The old man lit his lantern every single night — through storms, through cold winters, through nights so foggy the light barely reached the garden gate.
+
+Then one evening, a young girl stumbled out of the trees. She was lost, had been wandering",11,150,,max_tokens,4.39,2026-05-21T04:43:49+00:00,
+openai|P03_write_variant|r0004,openai,gpt-5.5,P03_write_variant,write me a story,4,ok,"The first time Mara heard the mountain sing, she was twelve years old and supposed to be asleep.
+
+It was winter, the kind that pressed its cold blue hands against the windows and made the whole village creak. Snow lay thick on the roofs. The stars were sharp enough to cut your fingers. Mara had woken because the wind had stopped.
+
+In a mountain village, silence was stranger than thunder.
+
+She sat up in bed, clutching her quilt, and listened.
+
+At first, she thought it was her mother humming in the kitchen. Then she thought it was",10,150,,incomplete,4.96,2026-05-21T04:43:53+00:00,
+anthropic|P03_write_variant|r0004,anthropic,claude-sonnet-4-6,P03_write_variant,write me a story,4,ok,"# The Last Lighthouse
+
+The storm had been building for three days before Maya finally climbed the stairs.
+
+She hadn't touched the light in years. Not since her grandfather passed and left her the lighthouse the way some people leave behind old furniture — useful once, now just taking up space in the world.
+
+The stairs groaned under her boots. One hundred and twelve steps. She knew the number without counting, the way you know the number of steps to your own bathroom in the dark.
+
+Outside, the Atlantic was furious.
+
+---
+
+At the top, she brushed dust from the great lamp and stood at the glass, watching the water throw itself against the rocks below. The town had an automated signal now, mounted",11,150,,max_tokens,4.62,2026-05-21T04:43:59+00:00,
+openai|P04_short_variant|r0004,openai,gpt-5.5,P04_short_variant,tell me a short story please,4,ok,"The moon was late.
+
+Every night, Mira climbed the hill behind her village to watch it rise, but tonight the sky stayed empty and dark. Worried, she lit her smallest lantern and held it up.
+
+“Are you lost?” she whispered.
+
+From behind a cloud came a tired voice. “A little.”
+
+The moon drifted out, pale and embarrassed. “I forgot the way.”
+
+Mira smiled. “Then follow me.”
+
+She walked down the hill, lantern swinging, and the moon followed her footsteps across the sky. By the time she reached home, silver light filled the whole village.
+
+After that, whenever the moon seemed especially bright, people said it was",12,150,,incomplete,5.21,2026-05-21T04:44:04+00:00,
+anthropic|P04_short_variant|r0004,anthropic,claude-sonnet-4-6,P04_short_variant,tell me a short story please,4,ok,"# The Last Light
+
+Every evening, old Marcus walked to the end of the pier to watch the sunset.
+
+His neighbors thought it was just a habit. But Marcus knew the truth — he was keeping a promise he made to his wife, Elena, forty years ago.
+
+*""Promise me you'll never stop watching the beautiful things,""* she had said.
+
+One evening, a young girl sat down beside him, arms crossed, looking miserable.
+
+""Why do you come here every day?"" she asked.
+
+""Someone I loved asked me to,"" he said simply.
+
+They sat in silence as the sky turned orange, then pink, then deep purple.
+
+""It *is* pretty,"" the girl finally admitted.",13,150,,max_tokens,4.75,2026-05-21T04:44:09+00:00,
+openai|P05_strange_variant|r0004,openai,gpt-5.5,P05_strange_variant,tell me a strange story please,4,ok,"In the town of Bellweather, every house had a doorbell.
+
+This was unusual because no one had visitors.
+
+The town sat in a shallow valley between three treeless hills, and the road leading in had been washed away fifty years before. The mail came by balloon. Groceries came by pulley from the next valley. Babies, when they were born, were politely introduced to everyone through the town’s newspaper, *The Bellweather Apology*, which apologized for being late even when it wasn’t.
+
+Still, every house had a doorbell.
+
+Every evening at exactly 7:13, all the doorbells rang at once.
+
+No one answered them.
+
+That was",12,150,,incomplete,5.83,2026-05-21T04:44:14+00:00,
+anthropic|P05_strange_variant|r0004,anthropic,claude-sonnet-4-6,P05_strange_variant,tell me a strange story please,4,ok,"# The Man Who Collected Tuesdays
+
+Gerald Fitch woke up one morning to find a Tuesday sitting on his kitchen counter.
+
+It was small. About the size of a cantaloupe. It hummed faintly and smelled like burnt coffee and mild disappointment, the way Tuesdays usually do.
+
+""Hm,"" said Gerald.
+
+He put it in a jar.
+
+---
+
+Over the following months, more Tuesdays arrived. They came through the mail slot, fell out of coat pockets, rolled in under the back door. Gerald collected them all. He labeled each jar carefully in his small, precise handwriting.
+
+*Tuesday, March 4th —",13,150,,max_tokens,7.62,2026-05-21T04:44:20+00:00,
+openai|P06_funny_variant|r0004,openai,gpt-5.5,P06_funny_variant,tell me a funny story please,4,ok,"Sure — here’s a funny little story:
+
+One day, a man walked into a library and asked the librarian, “Do you have any books on paranoia?”
+
+The librarian leaned in close and whispered, “They’re right behind you.”
+
+The man screamed, knocked over a display of cookbooks, and ran straight out of the building.
+
+The librarian sighed, picked up a book, and muttered, “Every time.”",12,102,,completed,3.08,2026-05-21T04:44:28+00:00,
+anthropic|P06_funny_variant|r0004,anthropic,claude-sonnet-4-6,P06_funny_variant,tell me a funny story please,4,ok,"# The Great Squirrel Heist
+
+Once upon a time, Dave decided to work from home, which was great except for one problem — a squirrel kept staring at him through the window.
+
+Every. Single. Day.
+
+Dave started feeling judged. The squirrel had this look like it was *evaluating his life choices.*
+
+So Dave did what any reasonable person would do. He made a tiny ""DO NOT DISTURB"" sign and taped it to the window.
+
+The next morning, he came downstairs to find the squirrel had somehow gotten onto the porch and knocked over his potted plant.
+
+Dave took this as a declaration of war.
+
+He bought a",13,150,,max_tokens,4.08,2026-05-21T04:44:31+00:00,
+openai|P07_random_setting|r0004,openai,gpt-5.5,P07_random_setting,tell me a story please. First choose a random setting and genre.,4,ok,"**Random setting:** A floating library above a stormy sea  
+**Random genre:** Cozy mystery with a touch of magic  
+
+---
+
+The library had been drifting above the sea for three hundred years, held aloft by clouds that smelled faintly of vanilla and old paper.
+
+Every morning, the librarians opened the windows to let in the gulls. Every evening, they lit the lanterns in the reading nooks and listened to the waves thunder far below. And every night, precisely at midnight, the library turned one page in",20,150,,incomplete,4.69,2026-05-21T04:44:36+00:00,
+anthropic|P07_random_setting|r0004,anthropic,claude-sonnet-4-6,P07_random_setting,tell me a story please. First choose a random setting and genre.,4,ok,"# The Clockmaker's Daughter
+
+*Setting: 1890s Prague | Genre: Gothic Mystery*
+
+---
+
+The fog rolled off the Vltava River like breath from a sleeping giant, curling through the cobblestone streets of the Old Town and swallowing the gas lamps whole.
+
+Marta Vesely had not slept in three days.
+
+She sat hunched over her father's workbench, surrounded by the guts of a hundred clocks — springs coiled like sleeping snakes, gears no wider than a fingernail, tiny hands that pointed at nothing. Her father's tools were cold in their leather roll. His coffee cup still sat on the windowsill",21,150,,max_tokens,5.32,2026-05-21T04:44:41+00:00,
+openai|P08_suppression|r0004,openai,gpt-5.5,P08_suppression,"tell me a story please, but not about lighthouses, lamps, the sea, ships, storms, fog, islands, cliffs, or old caretakers.",4,ok,"In the town of Bellwicket, every door had a tiny brass bell above it, and every bell had its own voice.
+
+The bakery bell went *ding-ding-ding!* like it was laughing at its own jokes. The library bell whispered *ting* as",39,150,,incomplete,5.1,2026-05-21T04:44:46+00:00,
+anthropic|P08_suppression|r0004,anthropic,claude-sonnet-4-6,P08_suppression,"tell me a story please, but not about lighthouses, lamps, the sea, ships, storms, fog, islands, cliffs, or old caretakers.",4,ok,"Here is a story for you.
+
+---
+
+**The Cartographer's Mistake**
+
+Elena had been drawing maps for thirty years, and she had never once put anything in the wrong place.
+
+Until Tuesday.
+
+It was a small error. A village called Hartwell, population maybe four hundred people, had been shifted two centimeters to the east on the regional survey map she was finalizing for the government office. Two centimeters on paper. About twelve kilometers in reality.
+
+She caught it Wednesday morning with her coffee still hot.
+
+The maps had already been sent.
+
+She called the office. The office had already distributed them to the field teams. The field teams were already using them to plan a new",42,150,,max_tokens,5.63,2026-05-21T04:44:51+00:00,
+openai|P01_baseline_please|r0005,openai,gpt-5.5,P01_baseline_please,tell me a story please,5,ok,"Once, in a small village tucked between green hills and a silver river, there lived a clockmaker named Elian.
+
+Elian was famous for making clocks that never lost a second. Tall clocks, tiny clocks, clocks with birds that sang at dawn, and pocket watches that glowed faintly in moonlight—all of them ticked with perfect precision.
+
+But Elian himself was always late.
+
+He was late to market, late to supper, late to weddings, and once, somehow, late to his own birthday party. The villagers found this very funny.
+
+“How can a man who makes perfect clocks be so terrible at time",11,150,,incomplete,6.87,2026-05-21T04:44:57+00:00,
+anthropic|P01_baseline_please|r0005,anthropic,claude-sonnet-4-6,P01_baseline_please,tell me a story please,5,ok,"# The Lantern Maker's Daughter
+
+In a village tucked between two mountains, there lived an old man who made lanterns.
+
+Not ordinary lanterns. His lanterns held light that never quite went out — not even in the rain, not even in the wind. People came from distant towns to buy them, and they always left feeling a little warmer than when they arrived.
+
+He had a daughter named Mira.
+
+Mira had never been able to see the lanterns herself. She had been blind since birth. But she knew them better than anyone. She knew the weight of them, the warmth they gave off, the faint hum they made when the flame caught just right.",12,150,,max_tokens,5.08,2026-05-21T04:45:04+00:00,
+openai|P02_baseline_plain|r0005,openai,gpt-5.5,P02_baseline_plain,tell me a story,5,ok,"Once, in a town built on the edge of a wide gray sea, there was a lighthouse that had not shone for nearly a hundred years.
+
+No one remembered why.
+
+The old people said the lamp had gone out the night the stars fell into the ocean. The children said a dragon slept in the tower and snored smoke into the clouds. The mayor said it was unsafe, which meant there were signs on the door and no one had bothered to look inside.
+
+But every evening, when the sun sank and the fishing boats returned, a girl named Mara stood on the cliffs and stared at the dark lighthouse.
+
+Mara’s",10,150,,incomplete,5.67,2026-05-21T04:45:10+00:00,
+anthropic|P02_baseline_plain|r0005,anthropic,claude-sonnet-4-6,P02_baseline_plain,tell me a story,5,ok,"# The Lantern Keeper
+
+There was once an old man who lived at the edge of a great forest, where the trees grew so tall they seemed to hold up the sky.
+
+Every night, without fail, he lit a lantern and hung it outside his door.
+
+---
+
+A young traveler passed through one autumn evening and stopped to rest. She watched the old man go through his ritual — trimming the wick, filling the oil, hanging the light with careful hands.
+
+""Who is that for?"" she asked. ""There's no road here. No one comes this way.""
+
+The old man smiled. ""Forty years ago,"" he said, ""I was lost in that forest. Cold, fright",11,150,,max_tokens,4.46,2026-05-21T04:45:16+00:00,
+openai|P03_write_variant|r0005,openai,gpt-5.5,P03_write_variant,write me a story,5,ok,"### The Lantern in the Rain
+
+Mara found the lantern on the night the sky forgot how to stop raining.
+
+It sat in the middle of the cobblestone road, glowing softly beneath the downpour, though no flame flickered inside it. Rain fell through the lantern’s glass panes and hissed against the metal, but the light remained steady—warm, golden, and impossible.
+
+Mara stared at it from beneath the sagging awning of the bakery.
+
+Everyone in the village of Bellweather knew the rules about strange things found after midnight:
+
+Do not touch them",10,150,,incomplete,5.73,2026-05-21T04:45:20+00:00,
+anthropic|P03_write_variant|r0005,anthropic,claude-sonnet-4-6,P03_write_variant,write me a story,5,ok,"# The Last Lighthouse
+
+The storm had been building for three days.
+
+Elena watched it from the kitchen window, her coffee going cold in her hands, while the clouds stacked themselves against the horizon like dark bruises. The weather app on her phone said *severe*. The locals said *worse than that*.
+
+She had only taken the lighthouse keeper job because she needed to disappear for a while.
+
+---
+
+The lighthouse on Cutter's Point had been automated for twenty years. There was no actual keeping to be done — the light ran itself, the foghorn triggered on a sensor, the whole operation hummed along without human involvement. The job, as the coastal authority had advertised it, was simply *presence",11,150,,max_tokens,5.22,2026-05-21T04:45:26+00:00,
+openai|P04_short_variant|r0005,openai,gpt-5.5,P04_short_variant,tell me a short story please,5,ok,"The little lighthouse had forgotten its purpose.
+
+For years, no ships had come near the rocky shore, and its lamp had grown dusty and dim. “Perhaps I’m no longer needed,” it creaked to the wind.
+
+One stormy night, a tiny fishing boat lost its way in the fog. The lighthouse heard the frightened bell clanging across the waves.
+
+With all the strength left in its old gears, it turned its lamp toward the sea.
+
+A golden beam cut through the darkness.
+
+The boat followed the light safely home, and by morning, the lighthouse stood tall again, glowing softly in the sunrise.
+
+It had learned that even a forgotten light can still guide someone home",12,150,,incomplete,6.14,2026-05-21T04:45:32+00:00,
+anthropic|P04_short_variant|r0005,anthropic,claude-sonnet-4-6,P04_short_variant,tell me a short story please,5,ok,"# The Last Light
+
+Every evening, old Marcus walked to the end of the pier to watch the sunset.
+
+One night, a little girl sat beside him, swinging her feet over the water.
+
+""Why do you come here every day?"" she asked.
+
+Marcus smiled. ""To make sure it comes back.""
+
+She squinted at him. ""The sun doesn't need your help to rise.""
+
+""No,"" he agreed. ""But *I* needed a reason to.""
+
+They sat together in silence as the sky turned orange and pink.
+
+The girl came back the next evening. And the one after that.
+
+Eventually, she didn't need a reason either.
+
+---
+
+*Sometimes the things that save",13,150,,max_tokens,4.83,2026-05-21T04:45:38+00:00,
+openai|P05_strange_variant|r0005,openai,gpt-5.5,P05_strange_variant,tell me a strange story please,5,ok,"At the edge of a town nobody remembered building, there was a laundromat that only opened during thunderstorms.
+
+Its sign said **SPIN & GRIEVE**, though no one in town could agree whether it had always said that or whether it had once been called something normal, like *Linda’s Wash-N-Fold*. Inside, the machines hummed even when unplugged, and the floor was always damp—not with water, but with something warmer and saltier.
+
+People went there only when they had ruined something they could not repair.
+
+A wedding dress stained with ink.
+
+A child’s blanket carrying the smell of a hospital room.
+
+A suit",12,150,,incomplete,5.22,2026-05-21T04:45:43+00:00,
+anthropic|P05_strange_variant|r0005,anthropic,claude-sonnet-4-6,P05_strange_variant,tell me a strange story please,5,ok,"# The Man Who Collected Silences
+
+Every Tuesday, Edmund visited the library not to borrow books, but to steal quiet.
+
+He carried a small glass jar in his coat pocket. When he found a particularly good silence — the kind that pooled between the shelves in the back corner, thick and almost amber-colored — he would open the lid carefully and let it fill.
+
+He had dozens at home. Labeled.
+
+*The silence after my mother stopped speaking to me. 1987.*
+*The silence inside a broken clock.*
+*The silence a coin makes before it decides which side to land on.*
+
+His neighbor, Mrs. Parrott, thought he was eccentric. She said",13,150,,max_tokens,6.17,2026-05-21T04:45:49+00:00,
+openai|P06_funny_variant|r0005,openai,gpt-5.5,P06_funny_variant,tell me a funny story please,5,ok,"Sure — here’s one:
+
+A man walked into a pet shop and saw a parrot with a sign that said: **“Talking Parrot — $10.”**
+
+He asked the shopkeeper, “Why is this parrot so cheap?”
+
+The shopkeeper sighed. “Well… he used to live in a law office, so his vocabulary is a little… unusual.”
+
+The man thought, *How bad can it be?* and bought the parrot.
+
+When he got home, the parrot looked around and said, “New office. New client.”
+
+The man laughed. “That’s actually pretty funny.”
+
+Then his wife walked in.
+
+The parrot said,",12,150,,incomplete,5.45,2026-05-21T04:45:55+00:00,
+anthropic|P06_funny_variant|r0005,anthropic,claude-sonnet-4-6,P06_funny_variant,tell me a funny story please,5,ok,"# The Case of the Missing Donut
+
+Dave was a detective. A serious detective. The kind who wore a trenchcoat even in summer and squinted at everything suspiciously.
+
+So when his donut went missing from the break room, he **treated it like a crime scene.**
+
+He cordoned off the refrigerator with police tape. He dusted the coffee maker for prints. He interviewed the stapler.
+
+*(The stapler had nothing to say.)*
+
+His partner Karen walked in and stared at him.
+
+""Dave... what are you doing?""
+
+""Someone,"" Dave said gravely, ""took my maple glazed.""
+
+""Dave.""
+
+""There are **monsters** in",13,150,,max_tokens,5.1,2026-05-21T04:46:01+00:00,
+openai|P07_random_setting|r0005,openai,gpt-5.5,P07_random_setting,tell me a story please. First choose a random setting and genre.,5,ok,"**Random setting:** A floating market above a gas giant  
+**Random genre:** Cozy mystery
+
+---
+
+### The Case of the Missing Mooncakes
+
+Every Thursday, the sky-barges of Luma Market drifted into a loose circle above the amber storms of the gas giant Orison, their lanterns glowing like fireflies against endless clouds.
+
+People came from fourteen moons to buy comet-ice, woven starlight, singing teapots, and the best mooncakes in the quadrant.
+
+Those mooncakes belonged to Auntie",20,150,,incomplete,5.82,2026-05-21T04:46:06+00:00,
+anthropic|P07_random_setting|r0005,anthropic,claude-sonnet-4-6,P07_random_setting,tell me a story please. First choose a random setting and genre.,5,ok,"# The Clockmaker's Daughter
+
+**Setting:** A fog-drenched port city in 1880s Victorian England
+**Genre:** Mystery / Gothic
+
+---
+
+The fog rolled in off the Thames like a living thing, swallowing lampposts whole and turning the cobblestones into a river of grey ghosts.
+
+Eliza Crane pulled her coat tighter and listened.
+
+*Tick. Tick. Tick.*
+
+It was coming from her father's shop — but her father had been dead for three days.
+
+She pushed open the door to **Crane & Sons Fine Timepieces**, though there had never been any sons, only Eliza, which her father",21,150,,max_tokens,4.56,2026-05-21T04:46:12+00:00,
+openai|P08_suppression|r0005,openai,gpt-5.5,P08_suppression,"tell me a story please, but not about lighthouses, lamps, the sea, ships, storms, fog, islands, cliffs, or old caretakers.",5,ok,,39,150,,incomplete,6.38,2026-05-21T04:46:17+00:00,
+anthropic|P08_suppression|r0005,anthropic,claude-sonnet-4-6,P08_suppression,"tell me a story please, but not about lighthouses, lamps, the sea, ships, storms, fog, islands, cliffs, or old caretakers.",5,ok,"Here's a story for you:
+
+---
+
+**The Cartographer's Mistake**
+
+Yusuf had been drawing maps of the city for eleven years, and he had never once made an error. Not a single misplaced street, not a crooked border, not a mislabeled park.
+
+So when he noticed the extra alley, he assumed it was his mistake.
+
+It appeared on a Tuesday, between a bakery and a tax office on Mercer Street — a narrow gap he had somehow never recorded. He added it to his master map, corrected his files, and felt the mild embarrassment of a professional who should have known better.
+
+The following Tuesday, there was another one",42,150,,max_tokens,4.56,2026-05-21T04:46:24+00:00,
+openai|P01_baseline_please|r0006,openai,gpt-5.5,P01_baseline_please,tell me a story please,6,ok,"Once, in a town tucked between two sleepy hills, there was a little clockmaker named Mara who made clocks that never told the correct time.
+
+They ticked too fast when people were bored, too slowly when people were happy, and sometimes, if someone was very lonely, the hands would stop altogether until a friend came by.
+
+Naturally, the townspeople complained.
+
+“This clock says it’s nearly midnight,” grumbled the baker one morning, “but I’ve only just put the bread in the oven!”
+
+Mara peered at the clock. Its golden hands trembled at twelve.
+
+“Were you worrying again?” she asked.
+
+The baker",11,150,,incomplete,5.45,2026-05-21T04:46:29+00:00,
+anthropic|P01_baseline_please|r0006,anthropic,claude-sonnet-4-6,P01_baseline_please,tell me a story please,6,ok,"# The Lantern Keeper's Last Night
+
+Old Maren had kept the lighthouse for forty years.
+
+Every evening, she climbed the 127 steps — she had counted them so many times the number lived in her bones — and lit the great lamp. Every morning, she climbed back down. In between, she watched the sea.
+
+People in the village thought she was lonely. She never corrected them.
+
+---
+
+On the night the storm came, Maren was already at the top. The sky had turned the color of a bruise, and the waves below were throwing themselves at the rocks like they had a grudge.
+
+Then she saw the light.
+
+Small. Flickering.",12,150,,max_tokens,5.84,2026-05-21T04:46:34+00:00,
+openai|P02_baseline_plain|r0006,openai,gpt-5.5,P02_baseline_plain,tell me a story,6,ok,"Once, in a town built between a forest and the sea, there lived a clockmaker named Elian who repaired every clock except the one in the tower.
+
+The tower clock had not moved for seventy years.
+
+Its hands were fixed at 3:17, and no one alive remembered why. Birds nested behind its face. Ivy climbed its stones. Children used it to tell dares, not time.
+
+“Climb to the top and touch the frozen minute hand,” they would say.
+
+No child ever did.
+
+Elian’s shop stood across the square. All day he mended pocket watches, mantel clocks, and little brass alarms that",10,150,,incomplete,6.41,2026-05-21T04:46:40+00:00,
+anthropic|P02_baseline_plain|r0006,anthropic,claude-sonnet-4-6,P02_baseline_plain,tell me a story,6,ok,"# The Lantern Maker's Daughter
+
+In a village tucked between two mountains, there lived an old man who made lanterns.
+
+Not ordinary lanterns. His lanterns held light that *lasted* — through storms, through wind, through the darkest winters. People came from distant towns to buy them, but he never sold a single one.
+
+He only gave them away.
+
+His daughter, Mira, never understood this.
+
+""Father,"" she said one evening, watching him wrap a lantern in cloth for a stranger at the door, ""we have almost nothing left to eat. Why won't you charge even a coin?""
+
+The old man smiled and handed the lantern out. ""Because",11,150,,max_tokens,4.78,2026-05-21T04:46:47+00:00,
+openai|P03_write_variant|r0006,openai,gpt-5.5,P03_write_variant,write me a story,6,ok,"The lantern at the end of Wren’s street had been broken for as long as anyone could remember.
+
+It leaned over the cobblestones like an old man listening for secrets, its glass panels cloudy, its iron post twisted by rust. Every evening, as the other lamps in the village flickered warmly to life, that one stayed dark.
+
+No one bothered fixing it.
+
+“It’s just the last lamp,” people said. “No one goes that way after sundown.”
+
+But Wren did.
+
+Every night, she walked to the end of the street and stood beneath the dead lantern, looking out at the",10,150,,incomplete,5.36,2026-05-21T04:46:52+00:00,
+anthropic|P03_write_variant|r0006,anthropic,claude-sonnet-4-6,P03_write_variant,write me a story,6,ok,"# The Last Lighthouse
+
+The storm had been building for three days before it finally arrived.
+
+Maya heard it first — a low, hollow moan rolling across the water, the kind of sound that didn't come from wind alone but from something older, something the sea kept stored up for moments like this.
+
+She pulled her coat tighter and climbed the iron stairs.
+
+---
+
+The lighthouse had belonged to her grandfather. Before him, his mother. Before her, a man whose name had been worn off the brass plate by salt and years. The building was stubborn in the way old things sometimes are — refusing to fall, refusing to change, standing on its rock like it had something left to prove.
+
+Maya had inherited",11,150,,max_tokens,5.3,2026-05-21T04:46:58+00:00,
+openai|P04_short_variant|r0006,openai,gpt-5.5,P04_short_variant,tell me a short story please,6,ok,"The moon hung low over the village, bright enough to turn every rooftop silver.
+
+Mira, the youngest lantern keeper, climbed the hill with a matchbox in her hand and a worried heart in her chest. The great lighthouse lantern had gone out for the first time in a hundred years, and the fishing boats were still far out at sea.
+
+At the top, she found the lantern cold and empty.
+
+“No oil,” she whispered.
+
+Then, from the darkness, a tiny glow blinked.
+
+A firefly drifted toward her. Then another. Then hundreds more rose from the grass, swirling around the glass tower like sparks from a fallen star.
+
+Mira opened the",12,150,,incomplete,5.28,2026-05-21T04:47:03+00:00,
+anthropic|P04_short_variant|r0006,anthropic,claude-sonnet-4-6,P04_short_variant,tell me a short story please,6,ok,"# The Last Lighthouse
+
+Old Mae had kept the lighthouse for forty years when the electric system finally failed during the worst storm of the decade.
+
+She was 72. Her back ached. The spiral stairs seemed steeper every year.
+
+But somewhere out in that black water, she could hear a boat.
+
+She lit every candle she owned. Carried them up, one by one, in a paper bag pressed against her chest. Set them along every window ledge until the whole tower glowed like a lantern.
+
+It wasn't much.
+
+It was enough.
+
+In the morning, a small fishing vessel was anchored safely in the cove. Two young men climbed up to her door, soaking",13,150,,max_tokens,5.67,2026-05-21T04:47:09+00:00,
+openai|P05_strange_variant|r0006,openai,gpt-5.5,P05_strange_variant,tell me a strange story please,6,ok,"Every Tuesday at 3:17 p.m., the town of Bellwether sneezed.
+
+Not the people in it. Not the cats, though they looked offended afterward. The town itself sneezed—a deep, underground *HAA-CHOO* that rattled teacups, flung open cupboard doors, and sent all the pigeons in the square straight up like gray confetti.
+
+No one knew why. The old mayor claimed it had always happened. The schoolchildren practiced “sneeze drills” by crouching under their desks. The clockmaker, Mr. V",12,150,,incomplete,5.69,2026-05-21T04:47:15+00:00,
+anthropic|P05_strange_variant|r0006,anthropic,claude-sonnet-4-6,P05_strange_variant,tell me a strange story please,6,ok,"# The Man Who Collected Mondays
+
+Edgar Finch noticed it on a Tuesday.
+
+His Mondays kept disappearing.
+
+Not metaphorically — not the way bad days blur together. He meant literally. He would fall asleep Sunday night, and when he opened his eyes, it was always Tuesday morning. His coffee cup would be rinsed and drying on the rack. His shoes would be slightly muddy. Sometimes there was a receipt in his pocket from a hardware store three towns over.
+
+He started leaving himself notes.
+
+*Edgar — what did you do today?*
+
+He would wake up Tuesday to find the notes turned over, with his own handwriting on the back:
+
+*Nothing",13,150,,max_tokens,5.55,2026-05-21T04:47:21+00:00,
+openai|P06_funny_variant|r0006,openai,gpt-5.5,P06_funny_variant,tell me a funny story please,6,ok,"Sure — here’s a silly one:
+
+A man walked into a pet shop and said, “I’d like to buy a parrot, but only if it can talk.”
+
+The shopkeeper smiled and pointed to a bright green parrot. “This one is very intelligent. He knows hundreds of words.”
+
+The man looked at the parrot and said, “Can you really talk?”
+
+The parrot stared back and said, “Can *you* fly?”
+
+The man was impressed and bought him immediately.
+
+On the way home, the man decided to test the parrot’s intelligence.
+
+“What’s two plus two?” he asked.
+
+“Four,” said the parrot.
+
+“What",12,150,,incomplete,5.49,2026-05-21T04:47:27+00:00,
+anthropic|P06_funny_variant|r0006,anthropic,claude-sonnet-4-6,P06_funny_variant,tell me a funny story please,6,ok,"# The Great Squirrel Incident
+
+So there was this guy named Dave who was **absolutely convinced** he could outsmart a squirrel.
+
+It started when a squirrel kept raiding his bird feeder. Dave spent **$47** on a ""squirrel-proof"" feeder. The squirrel figured it out in about **four minutes.**
+
+So Dave went online and found an elaborate pulley system. Spent a whole Saturday installing it. Went inside, made a sandwich, came back outside...
+
+The squirrel was **teaching another squirrel** how to use it.
+
+Dave then bought a fake owl. The squirrel used it as a **chair.**",13,149,,max_tokens,4.38,2026-05-21T04:47:32+00:00,
+openai|P07_random_setting|r0006,openai,gpt-5.5,P07_random_setting,tell me a story please. First choose a random setting and genre.,6,ok,"**Random setting:** A floating city above an endless ocean  
+**Random genre:** Cozy mystery
+
+---
+
+### The Case of the Vanishing Mooncakes
+
+In the floating city of Lumenharbor, where brass walkways creaked above blue sky and gulls nested in the chimneys, everyone knew three things:
+
+First, never lean too far over the railings after supper.
+
+Second, always tip the cloud-ferry pilots in exact change.
+
+And third, Mrs. Juniper Vale made the finest mooncakes in all seven airborne districts.
+
+Her little bakery, **The Silver Crumb**, sat at",20,150,,incomplete,5.36,2026-05-21T04:47:37+00:00,
+anthropic|P07_random_setting|r0006,anthropic,claude-sonnet-4-6,P07_random_setting,tell me a story please. First choose a random setting and genre.,6,ok,"## Setting & Genre Selection
+
+🎲 Rolling randomly...
+
+**Setting:** A lighthouse on a stormy coast in the 1920s
+**Genre:** Mystery / Gothic
+
+---
+
+# The Last Keeper
+
+The storm had been screaming for three days when Mara finally found the body.
+
+She hadn't meant to come to Holloway Point at all. Her motorcar had died on the coast road, the rain had swallowed the path back to town, and the lighthouse was the only light in a world that had otherwise gone completely black.
+
+The keeper — an old man named Fenn — had let her in without much warmth. He handed her a wool blanket, pointed to",21,150,,max_tokens,5.29,2026-05-21T04:47:43+00:00,
+openai|P08_suppression|r0006,openai,gpt-5.5,P08_suppression,"tell me a story please, but not about lighthouses, lamps, the sea, ships, storms, fog, islands, cliffs, or old caretakers.",6,ok,"In the town of Bellwether, every door had a different knock.
+
+Three quick taps and a pause belonged to the baker’s boy.",39,150,,incomplete,4.97,2026-05-21T04:47:48+00:00,
+anthropic|P08_suppression|r0006,anthropic,claude-sonnet-4-6,P08_suppression,"tell me a story please, but not about lighthouses, lamps, the sea, ships, storms, fog, islands, cliffs, or old caretakers.",6,ok,"Here's a story for you:
+
+---
+
+**The Tuesday Jar**
+
+Maya had been collecting Tuesdays for eleven years.
+
+Not literally, of course. But every Tuesday she wrote one true thing on a slip of paper and folded it into the old pasta sauce jar on her kitchen windowsill. It had started as a therapy assignment she'd mostly ignored except for this one small piece of it.
+
+*The coffee was perfect this morning.*
+
+*I laughed at something and didn't feel guilty about it.*
+
+*My sister called twice and I answered the second time.*
+
+The jar was almost full now, which presented a problem she hadn't anticipated. She didn't want to read the slips.",42,150,,max_tokens,5.1,2026-05-21T04:47:53+00:00,
+openai|P01_baseline_please|r0007,openai,gpt-5.5,P01_baseline_please,tell me a story please,7,ok,"Once, in a village tucked between a dark pine forest and a silver river, there lived a clockmaker named Elian who made the finest clocks anyone had ever seen. His clocks did not merely tick—they hummed softly, like they were remembering songs from long ago.
+
+People came from distant towns to buy them.
+
+“Your clocks keep perfect time,” they said.
+
+Elian would smile and answer, “Time keeps us. I only give it a place to rest.”
+
+But there was one clock in Elian’s shop that never worked.
+
+It stood in the corner beneath a dusty blue cloth, tall and",11,150,,incomplete,6.15,2026-05-21T04:47:59+00:00,
+anthropic|P01_baseline_please|r0007,anthropic,claude-sonnet-4-6,P01_baseline_please,tell me a story please,7,ok,"# The Lantern Keeper's Promise
+
+There was once an old man who lived at the edge of a forest so dark that even the stars seemed afraid to shine above it.
+
+Every night, without fail, he climbed the hill at the forest's border and lit a single lantern. Then he hung it on the old iron hook that had been there longer than anyone could remember.
+
+The villagers thought he was a little strange.
+
+*""Who are you lighting it for?""* a young girl named Mara asked him one evening.
+
+""For whoever needs it,"" he said simply.
+
+She looked out at the dark trees. ""But no one comes out of that forest.""
+
+The old man smiled.",12,150,,max_tokens,5.09,2026-05-21T04:48:05+00:00,
