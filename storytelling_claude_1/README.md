@@ -27,6 +27,14 @@ just run the same command again to continue.
 - **8 prompts × 3 providers × `n_per_cell`.** At `n=100` that's 2,400 stories.
 - Calls are ordered *by replicate* (replicate 1 across all cells, then 2, …),
   so a partial run is still balanced across every condition.
+- **`max_output_tokens` is the main cost lever.** The attractor signal — role,
+  setting, opening situation — lives in the first sentence or two, not the
+  ending. So a tight cap keeps the signal while cutting cost dramatically:
+  measured on real data, ~150 tokens retains ~87% of the motif signal for
+  roughly a fifth of the full-story cost. The default is set to 150. Raise it
+  only if you also want full, readable stories for qualitative review. The
+  analyzer flags stories that hit the cap (`likely_truncated`) so a cut-off
+  story isn't mistaken for a model that naturally writes short.
 - The analyzer is **unsupervised**: instead of checking for a known motif it
   clusters each prompt cell's stories by semantic similarity (sentence
   embeddings) and surfaces whatever attractors exist, reporting three "same

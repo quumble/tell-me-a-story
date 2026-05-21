@@ -57,6 +57,25 @@ BASE = Path(__file__).resolve().parent
 # quality on subtle distinctions, pass --model all-mpnet-base-v2 (~420MB).
 DEFAULT_MODEL = "all-MiniLM-L6-v2"
 
+# Read the output-token cap from config so truncation detection tracks whatever
+# the run actually used. Falls back to a large number if config is unavailable.
+def _load_token_cap():
+    try:
+        import yaml
+        with open(BASE / "config.yaml", encoding="utf-8") as f:
+            return int(yaml.safe_load(f).get("max_output_tokens", 100000))
+    except Exception:
+        return 100000
+
+TOKEN_CAP = _load_token_cap()
+
+
+def _as_int(v):
+    try:
+        return int(v)
+    except (TypeError, ValueError):
+        return None
+
 # The one named attractor we already know about, kept as a stable baseline.
 LIGHTHOUSE = re.compile(
     r"\blight\s?house\b|\bkeeper\b|\bbeacon\b|\blamplighter\b", re.IGNORECASE)
@@ -250,12 +269,19 @@ def main():
         labels = cluster_cell(texts, embedder, args.min_cluster, tightness)
 
         for r, lab in zip(cell, labels):
+            # A story whose output_tokens nearly hit the cap was likely cut off
+            # mid-sentence. Flag it so a short truncated story isn't mistaken for
+            # a model that naturally writes short. (Heuristic: within 3 of cap.)
+            out_tok = _as_int(r.get("output_tokens"))
+            truncated = (out_tok is not None and out_tok >= TOKEN_CAP - 3)
             scored_rows.append({
                 "request_id": r["request_id"], "provider": prov,
                 "prompt_id": pid, "replicate": r.get("replicate", ""),
                 "local_cluster": lab,
                 "is_lighthouse": bool(LIGHTHOUSE.search(r.get("story_text", "") or "")),
                 "word_count": len((r.get("story_text", "") or "").split()),
+                "output_tokens": out_tok if out_tok is not None else "",
+                "likely_truncated": truncated,
             })
 
         # Per-cluster, compute all three signals.
@@ -299,7 +325,8 @@ def main():
         w.writerows(attractor_rows)
     with open(BASE / "data" / "scored.csv", "w", encoding="utf-8", newline="") as f:
         cols = ["request_id", "provider", "prompt_id", "replicate",
-                "local_cluster", "is_lighthouse", "word_count"]
+                "local_cluster", "is_lighthouse", "word_count",
+                "output_tokens", "likely_truncated"]
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
         w.writerows(scored_rows)
@@ -325,6 +352,11 @@ def main():
     lh = sum(s["is_lighthouse"] for s in scored_rows)
     print(f"Lighthouse baseline: {lh}/{len(scored_rows)} stories "
           f"({lh / len(scored_rows):.0%}) mention a lighthouse/keeper/beacon.")
+    trunc = sum(1 for s in scored_rows if s["likely_truncated"])
+    if trunc:
+        print(f"Truncated at cap ({TOKEN_CAP} tok): {trunc}/{len(scored_rows)} "
+              f"({trunc / len(scored_rows):.0%}) — expected with a tight cap; the "
+              f"attractor signal is in the opening, so this is fine for clustering.")
     print("Wrote data/attractors.csv and data/scored.csv")
 
 

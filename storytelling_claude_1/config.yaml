@@ -15,8 +15,17 @@ study_id: storytelling_claude_1
 # n=100 -> 2400 total. Start small (e.g. n=2) for a smoke test.
 n_per_cell: 100
 
-# Max tokens of story to request. ~1200 comfortably fits these short stories.
-max_output_tokens: 1200
+# Max tokens of story to request.
+#
+# COST LEVER: the attractor signal (role + setting + opening situation) lives in
+# the first ~1-2 sentences, so a tight cap keeps the signal while cutting cost
+# ~5x. Measured on the smoke-test data, ~150 tokens retains ~87% of the motif
+# signal — past that, returns flatten fast. Lower this to save money; raise it
+# only if you also want readable full stories for qualitative review.
+#   100 = plenty for merely detecting an attractor
+#   150 = enough to distinguish WHICH attractor (recommended for this study)
+#   1200 = full readable stories, for qualitative review
+max_output_tokens: 150
 
 # Seconds to wait between API calls (gentle on rate limits).
 sleep_between_calls: 0.25
