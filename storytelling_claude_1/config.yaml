@@ -41,22 +41,32 @@ output_csv: data/stories.csv
 # Anthropic model. The OpenAI and Gemini strings below are placeholders that
 # match the original study's intent (an average free-tier proxy) — confirm
 # them for your own API keys, since they are the most likely thing to break.
+#
+# PER-PROVIDER TOKEN CAP: a provider may set its own `max_output_tokens` to
+# override the global one above. Why this exists: at a global 150-token cap,
+# Gemini returned 3-6 token fragments ("The sign above") instead of stories,
+# while OpenAI/Anthropic capped cleanly. Gemini already self-limits to ~100
+# tokens, so it doesn't need capping at all — we give it generous headroom and
+# let it stop naturally. OpenAI/Anthropic inherit the global 150 cap.
 # ----------------------------------------------------------------------------
 providers:
   openai:
     enabled: true
     model: gpt-5.5            # verify against current OpenAI model list
     api_key_env: OPENAI_API_KEY
+    # inherits global max_output_tokens (150)
 
   anthropic:
     enabled: true
     model: claude-sonnet-4-6  # real, current Anthropic model (free-user proxy)
     api_key_env: ANTHROPIC_API_KEY
+    # inherits global max_output_tokens (150)
 
   gemini:
     enabled: true
     model: gemini-3.5-flash   # verify against current Gemini model list
     api_key_env: GEMINI_API_KEY
+    max_output_tokens: 800    # do NOT tightly cap Gemini; it self-limits to ~100
 
 # ----------------------------------------------------------------------------
 # Prompt cells. The text IS the experimental condition — keep it verbatim.

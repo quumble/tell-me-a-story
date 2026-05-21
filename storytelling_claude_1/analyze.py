@@ -57,17 +57,27 @@ BASE = Path(__file__).resolve().parent
 # quality on subtle distinctions, pass --model all-mpnet-base-v2 (~420MB).
 DEFAULT_MODEL = "all-MiniLM-L6-v2"
 
-# Read the output-token cap from config so truncation detection tracks whatever
-# the run actually used. Falls back to a large number if config is unavailable.
-def _load_token_cap():
+# Read the output-token cap(s) from config so truncation detection tracks
+# whatever the run actually used. Providers may override the global cap, so we
+# build a {provider: cap} map. Falls back to a large number if unavailable.
+def _load_token_caps():
     try:
         import yaml
         with open(BASE / "config.yaml", encoding="utf-8") as f:
-            return int(yaml.safe_load(f).get("max_output_tokens", 100000))
+            cfg = yaml.safe_load(f)
+        global_cap = int(cfg.get("max_output_tokens", 100000))
+        caps = {}
+        for name, p in (cfg.get("providers") or {}).items():
+            caps[name] = int((p or {}).get("max_output_tokens", global_cap))
+        return global_cap, caps
     except Exception:
-        return 100000
+        return 100000, {}
 
-TOKEN_CAP = _load_token_cap()
+GLOBAL_TOKEN_CAP, TOKEN_CAPS = _load_token_caps()
+
+
+def _cap_for(provider):
+    return TOKEN_CAPS.get(provider, GLOBAL_TOKEN_CAP)
 
 
 def _as_int(v):
@@ -273,7 +283,7 @@ def main():
             # mid-sentence. Flag it so a short truncated story isn't mistaken for
             # a model that naturally writes short. (Heuristic: within 3 of cap.)
             out_tok = _as_int(r.get("output_tokens"))
-            truncated = (out_tok is not None and out_tok >= TOKEN_CAP - 3)
+            truncated = (out_tok is not None and out_tok >= _cap_for(prov) - 3)
             scored_rows.append({
                 "request_id": r["request_id"], "provider": prov,
                 "prompt_id": pid, "replicate": r.get("replicate", ""),
@@ -354,9 +364,10 @@ def main():
           f"({lh / len(scored_rows):.0%}) mention a lighthouse/keeper/beacon.")
     trunc = sum(1 for s in scored_rows if s["likely_truncated"])
     if trunc:
-        print(f"Truncated at cap ({TOKEN_CAP} tok): {trunc}/{len(scored_rows)} "
-              f"({trunc / len(scored_rows):.0%}) — expected with a tight cap; the "
-              f"attractor signal is in the opening, so this is fine for clustering.")
+        print(f"Truncated at cap: {trunc}/{len(scored_rows)} "
+              f"({trunc / len(scored_rows):.0%}) hit their provider's token cap "
+              f"— expected with a tight cap; the attractor signal is in the "
+              f"opening, so this is fine for clustering.")
     print("Wrote data/attractors.csv and data/scored.csv")
 
 

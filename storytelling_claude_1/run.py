@@ -110,9 +110,13 @@ def build_plan(cfg, only_provider=None):
         if p.get("enabled", True) and (only_provider in (None, name))
     }
     plan = []
+    global_cap = int(cfg["max_output_tokens"])
     for rep in range(1, int(cfg["n_per_cell"]) + 1):
         for prompt in cfg["prompts"]:
             for name, p in active.items():
+                # A provider may override the global token cap (e.g. Gemini,
+                # which self-limits and breaks under a tight cap).
+                cap = int(p.get("max_output_tokens", global_cap))
                 plan.append({
                     "request_id": f"{name}|{prompt['id']}|r{rep:04d}",
                     "provider": name,
@@ -120,6 +124,7 @@ def build_plan(cfg, only_provider=None):
                     "prompt_id": prompt["id"],
                     "prompt_text": prompt["text"],
                     "replicate": rep,
+                    "max_tokens": cap,
                 })
     return plan
 
@@ -179,7 +184,6 @@ def main():
     print(f"Plan: {len(plan)} total | already done: {len(plan) - len(todo)} | "
           f"to run now: {len(todo)}")
 
-    max_tokens = int(cfg["max_output_tokens"])
     sleep_s = float(cfg.get("sleep_between_calls", 0))
     done_now = ok = err = 0
 
@@ -194,7 +198,7 @@ def main():
         row["created_utc"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
         try:
             text, in_tok, out_tok = CALLERS[item["provider"]](
-                item["prompt_text"], item["model"], max_tokens)
+                item["prompt_text"], item["model"], item["max_tokens"])
             row.update(status="ok", story_text=text,
                        input_tokens=in_tok, output_tokens=out_tok,
                        elapsed_sec=round(time.time() - started, 2), error="")
