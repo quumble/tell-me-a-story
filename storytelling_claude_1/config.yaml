@@ -63,7 +63,9 @@ providers:
     # inherits global max_output_tokens (150)
 
   gemini:
-    enabled: true
+    enabled: false            # OFF: free tier is 20 requests/day, far below the
+                              # 800 this study needs. Re-enable once billing is
+                              # set up, or run it later at a smaller n.
     model: gemini-3.5-flash   # verify against current Gemini model list
     api_key_env: GEMINI_API_KEY
     # inherits global max_output_tokens (150). NOTE: thinking is disabled for
