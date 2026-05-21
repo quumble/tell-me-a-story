@@ -284,14 +284,24 @@ def main():
             # a model that naturally writes short. (Heuristic: within 3 of cap.)
             out_tok = _as_int(r.get("output_tokens"))
             truncated = (out_tok is not None and out_tok >= _cap_for(prov) - 3)
+            text = r.get("story_text", "") or ""
+            wc = len(text.split())
+            thoughts = _as_int(r.get("thoughts_tokens"))
+            # A genuinely unusable output: almost no words. Usually means the
+            # provider spent its budget on reasoning (thinking tokens) and left
+            # no room for the story — the Gemini failure mode we hit.
+            too_short = wc < 15
             scored_rows.append({
                 "request_id": r["request_id"], "provider": prov,
                 "prompt_id": pid, "replicate": r.get("replicate", ""),
                 "local_cluster": lab,
-                "is_lighthouse": bool(LIGHTHOUSE.search(r.get("story_text", "") or "")),
-                "word_count": len((r.get("story_text", "") or "").split()),
+                "is_lighthouse": bool(LIGHTHOUSE.search(text)),
+                "word_count": wc,
                 "output_tokens": out_tok if out_tok is not None else "",
+                "thoughts_tokens": thoughts if thoughts is not None else "",
+                "finish_reason": r.get("finish_reason", ""),
                 "likely_truncated": truncated,
+                "too_short_unusable": too_short,
             })
 
         # Per-cluster, compute all three signals.
@@ -336,7 +346,8 @@ def main():
     with open(BASE / "data" / "scored.csv", "w", encoding="utf-8", newline="") as f:
         cols = ["request_id", "provider", "prompt_id", "replicate",
                 "local_cluster", "is_lighthouse", "word_count",
-                "output_tokens", "likely_truncated"]
+                "output_tokens", "thoughts_tokens", "finish_reason",
+                "likely_truncated", "too_short_unusable"]
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
         w.writerows(scored_rows)
@@ -368,7 +379,23 @@ def main():
               f"({trunc / len(scored_rows):.0%}) hit their provider's token cap "
               f"— expected with a tight cap; the attractor signal is in the "
               f"opening, so this is fine for clustering.")
-    print("Wrote data/attractors.csv and data/scored.csv")
+
+    # Loud data-quality alarm: unusable (near-empty) outputs, broken out by
+    # provider. This is the failure that nearly cost a full run — surface it.
+    bad = [s for s in scored_rows if s["too_short_unusable"]]
+    if bad:
+        from collections import Counter
+        by_prov = Counter(s["provider"] for s in bad)
+        print(f"\n!!! DATA QUALITY: {len(bad)}/{len(scored_rows)} outputs are "
+              f"too short to use (<15 words). By provider: {dict(by_prov)}.")
+        # If a provider also burned thinking tokens, name the likely cause.
+        thinky = [s for s in bad if _as_int(s.get("thoughts_tokens"))]
+        if thinky:
+            print("    Some had nonzero thoughts_tokens — reasoning likely ate "
+                  "the budget. Check that thinking is disabled for that provider.")
+        print("    These rows are flagged too_short_unusable=True in scored.csv. "
+              "Investigate before trusting per-provider rates.")
+    print("\nWrote data/attractors.csv and data/scored.csv")
 
 
 if __name__ == "__main__":

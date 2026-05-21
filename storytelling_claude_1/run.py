@@ -33,22 +33,32 @@ BASE = Path(__file__).resolve().parent
 FIELDS = [
     "request_id", "provider", "model", "prompt_id", "prompt_text",
     "replicate", "status", "story_text",
-    "input_tokens", "output_tokens", "elapsed_sec", "created_utc", "error",
+    "input_tokens", "output_tokens", "thoughts_tokens", "finish_reason",
+    "elapsed_sec", "created_utc", "error",
 ]
 
 
 # --------------------------------------------------------------------------- #
-# Provider calls. One small function each. Each returns:
-#   (story_text, input_tokens, output_tokens)
+# Provider calls. One small function each. Each returns a dict with keys:
+#   text, input_tokens, output_tokens, thoughts_tokens, finish_reason
 # and raises on failure (the caller records the error and moves on).
+#
+# Why we capture finish_reason + thoughts_tokens: when a story comes back
+# short, these tell you WHY — natural stop, hit the token cap, or (for thinking
+# models like Gemini) reasoning ate the budget. Without them you're guessing.
 # --------------------------------------------------------------------------- #
 def call_openai(prompt, model, max_tokens):
     from openai import OpenAI
     client = OpenAI(api_key=_key("OPENAI_API_KEY"))
     r = client.responses.create(model=model, input=prompt, max_output_tokens=max_tokens)
-    text = getattr(r, "output_text", "") or ""
     usage = getattr(r, "usage", None)
-    return text.strip(), _u(usage, "input_tokens"), _u(usage, "output_tokens")
+    return {
+        "text": (getattr(r, "output_text", "") or "").strip(),
+        "input_tokens": _u(usage, "input_tokens"),
+        "output_tokens": _u(usage, "output_tokens"),
+        "thoughts_tokens": None,
+        "finish_reason": getattr(r, "status", None),
+    }
 
 
 def call_anthropic(prompt, model, max_tokens):
@@ -60,20 +70,42 @@ def call_anthropic(prompt, model, max_tokens):
     )
     text = "".join(b.text for b in r.content if getattr(b, "type", None) == "text")
     usage = getattr(r, "usage", None)
-    return text.strip(), _u(usage, "input_tokens"), _u(usage, "output_tokens")
+    return {
+        "text": text.strip(),
+        "input_tokens": _u(usage, "input_tokens"),
+        "output_tokens": _u(usage, "output_tokens"),
+        "thoughts_tokens": None,
+        "finish_reason": getattr(r, "stop_reason", None),
+    }
 
 
 def call_gemini(prompt, model, max_tokens):
     from google import genai
     from google.genai import types
     client = genai.Client(api_key=_key("GEMINI_API_KEY"))
+    # Turn thinking OFF so the token budget goes to the story, not reasoning.
+    # Gemini 2.5 Flash honors thinking_budget=0; some Gemini 3 models may ignore
+    # it (thinking can't always be disabled) — that's why we record
+    # thoughts_tokens below, so you can SEE whether it actually worked.
     r = client.models.generate_content(
         model=model, contents=prompt,
-        config=types.GenerateContentConfig(max_output_tokens=max_tokens),
+        config=types.GenerateContentConfig(
+            max_output_tokens=max_tokens,
+            thinking_config=types.ThinkingConfig(thinking_budget=0),
+        ),
     )
     usage = getattr(r, "usage_metadata", None)
-    return ((getattr(r, "text", "") or "").strip(),
-            _u(usage, "prompt_token_count"), _u(usage, "candidates_token_count"))
+    finish = None
+    cands = getattr(r, "candidates", None) or []
+    if cands:
+        finish = str(getattr(cands[0], "finish_reason", "") or "") or None
+    return {
+        "text": (getattr(r, "text", "") or "").strip(),
+        "input_tokens": _u(usage, "prompt_token_count"),
+        "output_tokens": _u(usage, "candidates_token_count"),
+        "thoughts_tokens": _u(usage, "thoughts_token_count"),
+        "finish_reason": finish,
+    }
 
 
 CALLERS = {"openai": call_openai, "anthropic": call_anthropic, "gemini": call_gemini}
@@ -130,11 +162,20 @@ def build_plan(cfg, only_provider=None):
 
 
 def read_existing(csv_path):
-    """Return {request_id: status} for rows already in the CSV."""
+    """Return {request_id: status} for rows already in the CSV.
+    Also warns if the file's columns predate the current schema, since
+    appending new-schema rows to an old file would misalign columns."""
     seen = {}
     if csv_path.exists():
         with open(csv_path, encoding="utf-8") as f:
-            for row in csv.DictReader(f):
+            reader = csv.DictReader(f)
+            existing_cols = reader.fieldnames or []
+            if existing_cols and set(existing_cols) != set(FIELDS):
+                print(f"WARNING: {csv_path} has a different column set than the "
+                      f"current run.py (likely from an older version). Appending "
+                      f"to it will misalign columns. Move or delete it and let a "
+                      f"fresh CSV be written.\n")
+            for row in reader:
                 seen[row["request_id"]] = row["status"]
     return seen
 
@@ -197,10 +238,13 @@ def main():
         row = dict(item)
         row["created_utc"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
         try:
-            text, in_tok, out_tok = CALLERS[item["provider"]](
+            res = CALLERS[item["provider"]](
                 item["prompt_text"], item["model"], item["max_tokens"])
-            row.update(status="ok", story_text=text,
-                       input_tokens=in_tok, output_tokens=out_tok,
+            row.update(status="ok", story_text=res["text"],
+                       input_tokens=res["input_tokens"],
+                       output_tokens=res["output_tokens"],
+                       thoughts_tokens=res["thoughts_tokens"],
+                       finish_reason=res["finish_reason"],
                        elapsed_sec=round(time.time() - started, 2), error="")
             ok += 1
         except KeyboardInterrupt:
@@ -209,6 +253,7 @@ def main():
         except Exception as exc:  # record and continue; the study is long-running
             row.update(status="error", story_text="",
                        input_tokens="", output_tokens="",
+                       thoughts_tokens="", finish_reason="",
                        elapsed_sec=round(time.time() - started, 2),
                        error=f"{type(exc).__name__}: {exc}")
             err += 1
